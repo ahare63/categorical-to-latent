@@ -1,0 +1,300 @@
+{
+    "reading_level": {
+        "middle": [
+            "aesops_fables.txt",
+            "alices_adventures_in_wonderland.txt",
+            "around_the_world_in_80_days.txt",
+            "black_beauty.txt",
+            "kidnapped.txt",
+            "little_house_in_the_big_woods.txt",
+            "little_women.txt",
+            "peter_pan.txt",
+            "rip_van_winkle.txt",
+            "tarzan_of_the_apes.txt",
+            "the_call_of_the_wild.txt",
+            "the_cask_of_amontillado.txt",
+            "the_fall_of_the_house_of_usher.txt",
+            "the_jungle_book.txt",
+            "the_legend_of_sleepy_hollow.txt",
+            "the_masque_of_the_red_death.txt",
+            "the_mysterious_affair_at_styles.txt",
+            "the_return_of_tarzan.txt",
+            "the_strange_case_of_dr_jekyll_and_mr_hyde.txt",
+            "the_time_machine.txt",
+            "the_wonderful_wizard_of_oz.txt",
+            "through_the_looking_glass.txt",
+            "treasure_island.txt",
+            "twenty_thousand_leagues_under_the_sea.txt",
+            "white_fang.txt"
+        ],
+        "high": [
+            "a_christmas_carol.txt",
+            "a_midsummer_nights_dream.txt",
+            "a_modest_proposal.txt",
+            "a_room_with_a_view.txt",
+            "a_tale_of_two_cities.txt",
+            "animal_farm.txt",
+            "anthem.txt",
+            "emma.txt",
+            "frankenstein.txt",
+            "hamlet.txt",
+            "janye_eyre.txt",
+            "leaves_of_grass.txt",
+            "macbeth.txt",
+            "madame_bovary.txt",
+            "metamorphosis.txt",
+            "ninteen_eighty_four.txt",
+            "pride_and_prejudice.txt",
+            "pygmalion.txt",
+            "romeo_and_juliet.txt",
+            "sense_and_sensibility.txt",
+            "shakespeares_sonnets.txt",
+            "the_great_gatsby.txt",
+            "the_hound_of_the_baskervilles.txt",
+            "the_iliad.txt",
+            "the_importance_of_being_earnest.txt",
+            "the_jungle.txt",
+            "the_odyssey.txt",
+            "the_old_man_and_the_sea.txt",
+            "the_picture_of_dorian_gray.txt",
+            "the_red_badge_of_courage.txt",
+            "the_scarlet_letter.txt",
+            "the_sun_also_rises.txt",
+            "this_side_of_paradise.txt",
+            "wuthering_heights.txt"
+        ],
+        "college": [
+            "a_room_of_ones_own.txt",
+            "a_vindication_of_the_rights_of_woman.txt",
+            "beyond_good_and_evil.txt",
+            "dubliners.txt",
+            "faust_part_1.txt",
+            "leviathan.txt",
+            "mrs_dalloway.txt",
+            "orlando.txt",
+            "songs_of_innocence_and_songs_of_experience.txt",
+            "swanns_way.txt",
+            "the_brothers_karamazov.txt",
+            "the_prince.txt",
+            "the_republic.txt",
+            "the_souls_of_black_folks.txt",
+            "the_trial.txt",
+            "the_waves.txt",
+            "to_the_lighthouse.txt",
+            "ulysses.txt",
+            "walden.txt",
+            "war_and_peace.txt"
+        ]
+    },
+    "author": {
+        "unique": [
+            "aesops_fables.txt",
+            "black_beauty.txt",
+            "little_house_in_the_big_woods.txt",
+            "little_women.txt",
+            "peter_pan.txt",
+            "the_jungle_book.txt",
+            "the_mysterious_affair_at_styles.txt",
+            "the_time_machine.txt",
+            "the_wonderful_wizard_of_oz.txt",
+            "a_modest_proposal.txt",
+            "a_room_with_a_view.txt",
+            "anthem.txt",
+            "frankenstein.txt",
+            "janye_eyre.txt",
+            "leaves_of_grass.txt",
+            "madame_bovary.txt",
+            "pygmalion.txt",
+            "the_hound_of_the_baskervilles.txt",
+            "the_jungle.txt",
+            "the_red_badge_of_courage.txt",
+            "the_scarlet_letter.txt",
+            "wuthering_heights.txt",
+            "a_vindication_of_the_rights_of_woman.txt",
+            "beyond_good_and_evil.txt",
+            "faust_part_1.txt",
+            "leviathan.txt",
+            "songs_of_innocence_and_songs_of_experience.txt",
+            "swanns_way.txt",
+            "the_brothers_karamazov.txt",
+            "the_prince.txt",
+            "the_republic.txt",
+            "the_souls_of_black_folks.txt",
+            "walden.txt",
+            "war_and_peace.txt"
+        ],
+        "carroll": [
+            "alices_adventures_in_wonderland.txt",
+            "through_the_looking_glass.txt"
+        ],
+        "verne": [
+            "around_the_world_in_80_days.txt",
+            "twenty_thousand_leagues_under_the_sea.txt"
+        ],
+        "irving": [
+            "the_legend_of_sleepy_hollow.txt",
+            "rip_van_winkle.txt"
+        ],
+        "stevenson": [
+            "kidnapped.txt",
+            "the_strange_case_of_dr_jekyll_and_mr_hyde.txt",
+            "treasure_island.txt"
+        ],
+        "burroughs": [
+            "tarzan_of_the_apes.txt",
+            "the_return_of_tarzan.txt"
+        ],
+        "london": [
+            "the_call_of_the_wild.txt",
+            "white_fang.txt"
+        ],
+        "poe": [
+            "the_cask_of_amontillado.txt",
+            "the_fall_of_the_house_of_usher.txt",
+            "the_masque_of_the_red_death.txt"
+        ],
+        "shakespeare": [
+            "a_midsummer_nights_dream.txt",
+            "hamlet.txt",
+            "macbeth.txt",
+            "romeo_and_juliet.txt",
+            "shakespeares_sonnets.txt"
+        ],
+        "dickens": [
+            "a_christmas_carol.txt",
+            "a_tale_of_two_cities.txt"
+        ],
+        "orwell": [
+            "animal_farm.txt",
+            "ninteen_eighty_four.txt"
+        ],
+        "austen": [
+            "emma.txt",
+            "pride_and_prejudice.txt",
+            "sense_and_sensibility.txt"
+        ],
+        "kafka": [
+            "metamorphosis.txt",  
+            "the_trial.txt"
+        ],
+        "hemingway": [
+            "the_old_man_and_the_sea.txt",
+            "the_sun_also_rises.txt"
+        ],
+        "wilde": [
+            "the_importance_of_being_earnest.txt",
+            "the_picture_of_dorian_gray.txt"
+        ],
+        "homer": [
+            "the_iliad.txt",
+            "the_odyssey.txt"
+        ],
+        "fitzgerald": [
+            "the_great_gatsby.txt",
+            "this_side_of_paradise.txt"
+        ],
+        "woolf": [
+            "a_room_of_ones_own.txt",
+            "mrs_dalloway.txt",
+            "orlando.txt",
+            "the_waves.txt",
+            "to_the_lighthouse.txt"
+        ],
+        "joyce": [
+            "dubliners.txt",
+            "ulysses.txt"
+        ]
+
+    },
+    "genre": {
+        "fiction": [
+            "dubliners.txt",
+            "ulysses.txt",
+            "mrs_dalloway.txt",
+            "orlando.txt",
+            "the_waves.txt",
+            "to_the_lighthouse.txt",
+            "the_great_gatsby.txt",
+            "this_side_of_paradise.txt",
+            "the_picture_of_dorian_gray.txt",
+            "the_old_man_and_the_sea.txt",
+            "the_sun_also_rises.txt",
+            "a_christmas_carol.txt",
+            "a_tale_of_two_cities.txt",
+            "animal_farm.txt",
+            "ninteen_eighty_four.txt",
+            "emma.txt",
+            "pride_and_prejudice.txt",
+            "sense_and_sensibility.txt",
+            "metamorphosis.txt",  
+            "the_trial.txt",
+            "war_and_peace.txt",
+            "alices_adventures_in_wonderland.txt",
+            "through_the_looking_glass.txt",
+            "around_the_world_in_80_days.txt",
+            "twenty_thousand_leagues_under_the_sea.txt",
+            "the_legend_of_sleepy_hollow.txt",
+            "rip_van_winkle.txt",
+            "kidnapped.txt",
+            "the_strange_case_of_dr_jekyll_and_mr_hyde.txt",
+            "treasure_island.txt",
+            "tarzan_of_the_apes.txt",
+            "the_return_of_tarzan.txt",
+            "the_call_of_the_wild.txt",
+            "white_fang.txt",
+            "the_cask_of_amontillado.txt",
+            "the_fall_of_the_house_of_usher.txt",
+            "the_masque_of_the_red_death.txt",
+            "swanns_way.txt",
+            "the_brothers_karamazov.txt",
+            "the_hound_of_the_baskervilles.txt",
+            "the_jungle.txt",
+            "the_red_badge_of_courage.txt",
+            "the_scarlet_letter.txt",
+            "wuthering_heights.txt",
+            "madame_bovary.txt",
+            "a_room_with_a_view.txt",
+            "anthem.txt",
+            "frankenstein.txt",
+            "janye_eyre.txt",
+            "aesops_fables.txt",
+            "black_beauty.txt",
+            "little_house_in_the_big_woods.txt",
+            "little_women.txt",
+            "peter_pan.txt",
+            "the_jungle_book.txt",
+            "the_mysterious_affair_at_styles.txt",
+            "the_time_machine.txt",
+            "the_wonderful_wizard_of_oz.txt"
+
+        ],
+        "non-fiction": [
+            "a_room_of_ones_own.txt",
+            "the_prince.txt",
+            "the_republic.txt",
+            "the_souls_of_black_folks.txt",
+            "walden.txt",
+            "leviathan.txt",
+            "a_vindication_of_the_rights_of_woman.txt",
+            "beyond_good_and_evil.txt",
+            "a_modest_proposal.txt"
+
+        ],
+        "poetry": [
+            "the_iliad.txt",
+            "the_odyssey.txt",
+            "shakespeares_sonnets.txt",
+            "songs_of_innocence_and_songs_of_experience.txt",
+            "leaves_of_grass.txt"
+        ],
+        "plays": [
+            "the_importance_of_being_earnest.txt",  
+            "a_midsummer_nights_dream.txt",
+            "hamlet.txt",
+            "macbeth.txt",
+            "romeo_and_juliet.txt",
+            "faust_part_1.txt",
+            "pygmalion.txt"
+        ]
+    }
+}
