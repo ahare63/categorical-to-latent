@@ -1,0 +1,303 @@
+{
+    "num_responses" : 0,
+
+    "major": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "A_text": "Not a student/Undecided",
+        "B_text": "Humanities",
+        "C_text": "Social Sciences",
+        "D_text": "Engineering/Hard Sciences",
+        "E_text": "Other"
+    },
+
+    "frequency": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "A_text": "Never",
+        "B_text": "A few times a year",
+        "C_text": "A few times a month",
+        "D_text": "Several times a week"
+    },
+
+    "adoption": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "A_text": "Not at all likely",
+        "B_text": "Not very likely",
+        "C_text": "Neutral",
+        "D_text": "Somewhat likely",
+        "E_text": "Very likely"
+    },
+
+    "level": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "A_text": "Not at all well",
+        "B_text": "Not very well",
+        "C_text": "Somewhat well",
+        "D_text": "Very well",
+        "E_text": "Extremely well"
+    },
+
+    "set_cover": {
+        "relevance": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "utility": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "wins": {
+            "relevance": {
+                "embedding_average": 0,
+                "word_movers_distance": 0,
+                "jaccard": 0,
+                "edit_distance": 0
+            },
+            "utility": {
+                "embedding_average": 0,
+                "word_movers_distance": 0,
+                "jaccard": 0,
+                "edit_distance": 0
+            }
+        },
+        "losses": {
+            "relevance": {
+                "embedding_average": 0,
+                "word_movers_distance": 0,
+                "jaccard": 0,
+                "edit_distance": 0
+            },
+            "utility": {
+                "embedding_average": 0,
+                "word_movers_distance": 0,
+                "jaccard": 0,
+                "edit_distance": 0   
+            }
+        }
+    },
+
+    "weighted_set_cover": {
+        "relevance": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "utility": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "wins": {
+            "relevance": {
+                "embedding_average": 0,
+                "word_movers_distance": 0,
+                "jaccard": 0,
+                "edit_distance": 0
+            },
+            "utility": {
+                "embedding_average": 0,
+                "word_movers_distance": 0,
+                "jaccard": 0,
+                "edit_distance": 0
+            }
+        },
+        "losses": {
+            "relevance": {
+                "embedding_average": 0,
+                "word_movers_distance": 0,
+                "jaccard": 0,
+                "edit_distance": 0
+            },
+            "utility": {
+                "embedding_average": 0,
+                "word_movers_distance": 0,
+                "jaccard": 0,
+                "edit_distance": 0   
+            }
+        }
+    },
+
+    "embedding_average": {
+        "relevance": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "utility": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "wins": {
+            "relevance": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            },
+            "utility": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            }
+        },
+        "losses": {
+            "relevance": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            },
+            "utility": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            }
+        }
+    },
+
+    "word_movers_distance": {
+        "relevance": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "utility": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "wins": {
+            "relevance": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            },
+            "utility": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            }
+        },
+        "losses": {
+            "relevance": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            },
+            "utility": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            }
+        }
+    },
+
+    "jaccard": {
+        "relevance": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "utility": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "wins": {
+            "relevance": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            },
+            "utility": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            }
+        },
+        "losses": {
+            "relevance": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            },
+            "utility": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            }
+        }
+    },
+
+    "edit_distance": {
+        "relevance": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "utility": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        },
+        "wins": {
+            "relevance": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            },
+            "utility": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            }
+        },
+        "losses": {
+            "relevance": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            },
+            "utility": {
+                "set_cover": 0,
+                "weighted_set_cover": 0
+            }
+        }
+    }
+}

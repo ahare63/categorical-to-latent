@@ -1,0 +1,167 @@
+{
+    "opening": [
+        {
+            "title": "major",
+            "question_text": "Of the following categories, which best describes your area of study?",
+            "options_text": "A. Not a student/Undecided; B. Humanities; C. Social Sciences; D. Engineering/Hard Sciences; E. Other",
+            "options_prompt": "Please enter a letter from A to E and then press Enter.",
+            "valid_inputs": ["A", "B", "C", "D", "E"],
+            "error_handlers": {
+                "a": "A",
+                "b": "B",
+                "c": "C",
+                "d": "D",
+                "e": "E",
+                "not a student": "A",
+                "undecided": "A",
+                "Humanities": "B",
+                "humanities": "B",
+                "social sciences": "C",
+                "Social Sciences": "C",
+                "Engineering": "D",
+                "engineering": "D",
+                "hard sciences": "D",
+                "Hard Sciences": "D",
+                "other": "E",
+                "Other": "E"
+            }
+
+        },
+        {
+            "title": "frequency",
+            "question_text": "How often do you typically engage in any sort of creative writing? This includes fiction, essays, journalism, poetry, etc.",
+            "options_text": "A. Never; B. A few times a year; C. A few times a month; D. Several times a week",
+            "options_prompt": "Please enter a letter from A to D and then press Enter.",
+            "valid_inputs": ["A", "B", "C", "D"],
+            "error_handlers": {
+                "a": "A",
+                "b": "B",
+                "c": "C",
+                "d": "D" 
+            }
+        }
+
+    ],
+    "required": [
+        {
+            "title": "preference",
+            "question_text": "If given the choice between seeing the sentences from Group A or the sentences from Group B, which would you prefer?",
+            "options_text": "A. Group A; B. Group B",
+            "options_prompt": "Please enter either A or B and then press Enter.",
+            "valid_inputs": ["A", "B"],
+            "error_handlers": {
+                "a": "A",
+                "b": "B",
+                "Group A": "A",
+                "group a": "A",
+                "group A": "A",
+                "Group B": "B",
+                "group b": "B",
+                "group B": "B"
+            }
+        }
+    ],
+    "variable": [
+        {
+            "title": "utility",
+            "dynamic_options": ["A", "B"],
+            "question_text": "Of the sentences in Group %s, how many might be useful for writing a sentence after the original sentence?",
+            "options_prompt": "Please enter a number from 0 to 5 and then press Enter.",
+            "valid_inputs": ["0", "1", "2", "3", "4", "5"],
+            "error_handlers": {
+                "zero": "0",
+                "Zero": "0",
+                "none": "0",
+                "None": "0",
+                "one": "1",
+                "One": "1",
+                "Two": "2",
+                "two": "2",
+                "three": "3",
+                "Three": "3",
+                "four": "4",
+                "Four": "4",
+                "Five": "5",
+                "five": "5",
+                "all": "5",
+                "All": "5"
+            }
+        },
+        {
+            "title": "relevance",
+            "dynamic_options": ["A", "B"],
+            "question_text": "Of the sentences in Group %s, how many are relevant to the original sentence?",
+            "options_prompt": "Please enter a number from 0 to 5 and then press Enter.",
+            "valid_inputs": ["0", "1", "2", "3", "4", "5"],
+            "error_handlers": {
+                "zero": "0",
+                "Zero": "0",
+                "none": "0",
+                "None": "0",
+                "one": "1",
+                "One": "1",
+                "Two": "2",
+                "two": "2",
+                "three": "3",
+                "Three": "3",
+                "four": "4",
+                "Four": "4",
+                "Five": "5",
+                "five": "5",
+                "all": "5",
+                "All": "5"
+            }
+        }
+    ],   
+    "closing": [
+        {
+            "title": "adoption",
+            "question_text": "Now that you've seen the tool in action, how likely would you be to use it if you had to do some creative writing?",
+            "options_text": "A. Not at all likely; B. Not very likely; C. Neutral; D. Somewhat likely; E. Very likely",
+            "options_prompt": "Please enter a letter from A to E and then press Enter.",
+            "valid_inputs": ["A", "B", "C", "D", "E"],
+            "error_handlers": {
+                "a": "A",
+                "b": "B",
+                "c": "C",
+                "d": "D",
+                "e": "E",
+                "Not at all likely": "A",
+                "not at all likely": "A",
+                "Not very likely": "B",
+                "not very likely": "B",
+                "Neutral": "C",
+                "neutral": "C",
+                "Somewhat likely": "D",
+                "somewhat likely": "D",
+                "Very likely": "E",
+                "very likely": "E"
+            }
+        },
+        {
+            "title": "level",
+            "question_text": "In general, how well did the suggested sentences match intended difficulty level?",
+            "options_text": "A. Not at all well; B. Not very well; C. Somewhat well; D. Very well; E. Extremely well",
+            "options_prompt": "Please enter a letter from A to E and then press Enter.",
+            "valid_inputs": ["A", "B", "C", "D", "E"],
+            "error_handlers": {
+                "a": "A",
+                "b": "B",
+                "c": "C",
+                "d": "D",
+                "e": "E",
+                "Not at all well": "A",
+                "not at all well": "A",
+                "Not very well": "B",
+                "not very well": "B",
+                "Somewhat well": "C",
+                "somewhat well": "C",
+                "Very well": "D",
+                "very well": "D",
+                "Extremely well": "E",
+                "extremely well": "E"
+            }
+        }
+
+    ]
+}
