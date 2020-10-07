@@ -22,28 +22,34 @@ def get_raw_words(path):
   if path == 'brown_corpus':
     sens = brown.sents()
     text = '\n'.join([' '.join(s) for s in sens])
+
   elif path == 'reuters_corpus':
     sens = reuters.sents()
     text = '\n'.join([' '.join(s) for s in sens])
+
   elif path == 'RACE_corpus':
     df_1 = pd.read_csv('./data/middle_combined.csv')
     df_2 = pd.read_csv('./data/high_combined.csv')
     text = '\n'.join(list(df_1['text']) + list(df_2['text']))
     # This dataset appears to have an issue with period spacing
     text = text.replace(".", ". ")
+
   elif path == 'gatsby':
     with open('./data/gatsby.txt', 'r') as f:
       text = '\n'.join(f.readlines())
+
   elif path == 'authorship':
     with open('./data/authorship_data.json', 'rb') as f:
       j = json.load(f)
       for key in j.keys():
         text += j[key]['text']
-  elif path == 'news_corpus':
-    df = pd.read_csv('./data/news.csv')
+
+  elif path in ('news_small', 'news_large'):
+    df = pd.read_csv(f'./data/all_the_{path}.csv')
     text = '\n'.join(list(df['content']))
     text = text.replace("   ", " ")
     text = text.replace("   ", " ")
+
   elif path.startswith("books"):
     # Get *all* books
     if path == 'books':
@@ -56,10 +62,10 @@ def get_raw_words(path):
                     text += "\n".join(f.readlines()) + "\n"
         # Underscores are used to indicate italics here and should be dropped.        
         text = text.replace("_", "")
-            
+    # Get only books of specified difficulty      
     else:
         difficulty = path.split("_")[1]
-        files = glob.glob("./data/books/%s/*.txt" % difficulty)
+        files = glob.glob(f"./data/books/{difficulty}/*.txt" )
         text = ""
         for file in files:
           with open(file, 'r') as f:

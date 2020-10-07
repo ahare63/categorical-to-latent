@@ -8,13 +8,16 @@ import pandas as pd
 def get_tokenized_sentences(dataset):
     if dataset == 'brown_corpus':
         return list(brown.sents())
+
     elif dataset == 'reuters_corpus':
         return list(reuters.sents())
+
     elif dataset == 'gatsby':
         with open('./data/gatsby.txt', 'r') as f:
           text = '\n'.join(f.readlines())
         tok_sent = [word_tokenize(t) for t in sent_tokenize(text)]
         return tok_sent
+
     elif dataset == 'RACE_corpus':
         df_1 = pd.read_csv('./data/middle_combined.csv')
         df_2 = pd.read_csv('./data/high_combined.csv')
@@ -23,20 +26,33 @@ def get_tokenized_sentences(dataset):
         text = text.replace(".", ". ")
         tok_sent = [word_tokenize(t) for t in sent_tokenize(text)]
         return tok_sent
-    elif dataset == 'news':
-        df = pd.read_csv('./data/news.csv')
+
+    elif dataset in ('news_small', 'news_large'):
+        df = pd.read_csv(f'./data/all_the_{dataset}.csv')
         text = '\n'.join(list(df['content']))
         text = text.replace("   ", " ")
         text = text.replace("   ", " ")
         tok_sent = [word_tokenize(t) for t in sent_tokenize(text)]
         return tok_sent
+
     elif dataset.startswith("books"):
-        difficulty = dataset.split("_")[1]
-        files = glob.glob("./data/books/%s/*.txt" % difficulty)
-        text = ""
-        for file in files:
-            with open(file, 'r') as f:
-                text += "\n".join(f.readlines()) + "\n"
+        # Get all books
+        if dataset == 'books':
+            text = ""
+            dif = ["middle", "high", "college"]
+            for d in dif:
+                files = glob.glob(f"./data/books/{d}/*.txt")
+                for file in files:
+                    with open(file, 'r') as f:
+                        text += "\n".join(f.readlines()) + "\n"
+        # Get all books of specified difficulty
+        else:
+            difficulty = dataset.split("_")[1]
+            files = glob.glob(f"./data/books/{difficulty}/*.txt")
+            text = ""
+            for file in files:
+                with open(file, 'r') as f:
+                    text += "\n".join(f.readlines()) + "\n"
         # Underscores are used to indicate italics here and should be dropped.        
         text = text.replace("_", "")
         tok_sent = [word_tokenize(t) for t in sent_tokenize(text)]
