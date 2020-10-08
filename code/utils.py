@@ -75,9 +75,11 @@ def make_stopwords_list():
   stopwords += [".", ",", "!", "?", "...", "-", ":", ";", "“"]
   return stopwords
 
-def jaccard_similarity(A, B):
+def jaccard_similarity(A, B, debug=False):
     A = set(A)
     B = set(B)
     intersection = len(A.intersection(B))
+    if debug:
+        print("Intersection", intersection)
     union = len(A) + len(B) - intersection
     return intersection/union

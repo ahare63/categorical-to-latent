@@ -30,6 +30,8 @@ class SimilarSentences():
     self.wmd_memory = {}            # Dict to store Euclidian distances for future lookups
     self.wmd_neighbors = None       # The neighbors of the most recent query, used for approximate WMD
     self.wmd_prev_query = None      # The query corresponding to wmd_neighbors
+    self.debug = False              # If True, print information
+    self.prevent_duplicate = True   # If True, prevent results from returning something very close to the query sentence
 
     self.sen_index = None       # faiss index containing average embeddings for a sentence
     self.sen_2_ind = None       # Mapping from string sentence to its number in the index
@@ -51,7 +53,7 @@ class SimilarSentences():
   # Update search parameters, especially those used for set cover
   def update_search_params(self, r=None, k=None, length_penalty=None, use_wt=None, 
                             use_dis=None, wmd_k=None, wmd_default=None, use_wmd_estimate=None, 
-                            use_wmd_memory=None):
+                            use_wmd_memory=None, debug=None, prevent_duplicate=None):
     if r is not None:
       self.r = r
     if k is not None:
@@ -70,6 +72,10 @@ class SimilarSentences():
       self.use_wmd_estimate = use_wmd_estimate
     if use_wmd_memory is not None:
       self.use_wmd_memory = use_wmd_memory
+    if debug is not None:
+      self.debug = debug
+    if prevent_duplicate is not None:
+      self.prevent_duplicate = prevent_duplicate
 
   # Sets the list of stopwords, either from new_list (if it's not None)
   # or from a default list if make_default is True
@@ -141,6 +147,21 @@ class SimilarSentences():
     word_2_embedding, _, _, _ = process_words.get_dicts(word_2_count, self.embedder, self.stopwords)
     return word_2_embedding, word_2_count
 
+  # Given a query and a list of sentences, remove the query or something extremely close to it from the list
+  def remove_duplicate(self, query, sentence_list, edits_allowed=5):
+    if query in sentence_list:
+      sentence_list.remove(query)
+      if self.debug:
+        print("Removed exact")
+      return sentence_list
+    for sen in sentence_list:
+      if Levenshtein.distance(query, sen) < edits_allowed:
+        if self.debug:
+          print("Removed", sen)
+        sentence_list.remove(sen)
+    return sentence_list
+    
+
   """ Functions for calculating the set cover nearest neighbors """ 
   # Expand the words in the query sentence to include neighbors in the embedding space
   # r is the number of nearest words to include
@@ -183,7 +204,7 @@ class SimilarSentences():
   def set_cover_score(self, query, db_sentence, word_wt, word_dis):
     score = 0
     matched_words = {}
-    for word in db_sentence:
+    for word in set(db_sentence):
       if word in query:
         wt_score = word_wt[word] if self.use_wt else 1
         dis_score = word_dis[word] if self.use_dis else 1
@@ -205,8 +226,12 @@ class SimilarSentences():
     
     # First, get the synonymous words
     query_counts, word_wt, word_dis = self.expand_query_sentence(query_emb, query_counts)
+    if self.debug:
+      print("Expanded Query:", query_counts)
 
     candidates = list(self.sen_2_emb.keys())
+    if self.prevent_duplicate:
+      candidates = self.remove_duplicate(query, candidates)
     found = []
     for _ in range(0, self.k):
       # Track the highest score
@@ -224,6 +249,9 @@ class SimilarSentences():
           max_score = score
           max_sen = candidate
           max_matches = matches
+      if self.debug:
+        print("Max Score", max_score)
+        print("Max Matches", max_matches)
       found.append(max_sen)
 
       # Update counts of uncovered words & remove the returned sentence from the next calculation
@@ -275,7 +303,11 @@ class SimilarSentences():
           for B in candidates:
             scores.append(utils.jaccard_similarity(A, B))
           # Sort and return top k results
-          return [self.ind_2_sen[x] for _, x in sorted(zip(scores, self.ind_2_tok_sen.keys()), key=lambda t: t[0], reverse=True)[:self.k]]
+          results = [self.ind_2_sen[x] for _, x in sorted(zip(scores, self.ind_2_tok_sen.keys()), key=lambda t: t[0], reverse=True)[:self.k]]
+          if self.debug:
+            for r in results:
+              _ = utils.jaccard_similarity(A, list(self.ind_2_tok_sen[self.sen_2_ind[r]]), debug=True)
+          return results
 
         if comparison == 'edit_distance':
           # Get representation of all sentences
