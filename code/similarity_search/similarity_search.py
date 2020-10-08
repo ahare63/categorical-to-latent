@@ -17,7 +17,7 @@ class SimilarSentences():
     self.data_name = data_name      # The dataset to use
     self.embedder = embedder        # The embedder object
     self.stopwords = []             # A list of stopwords
-    self.r = 3                      # The number of nearest embedded words to use for set cover
+    self.r = 10                      # The number of nearest embedded words to use for set cover
     self.k = 5                      # The number of nearest neighbor sentences to return
     self.length_penalty = 0.5       # The length penalty for the set cover 
     self.use_wt = False             # Use the (TF-IDF) weights as part of the set cover calculation
@@ -148,7 +148,7 @@ class SimilarSentences():
     return word_2_embedding, word_2_count
 
   # Given a query and a list of sentences, remove the query or something extremely close to it from the list
-  def remove_duplicate(self, query, sentence_list, edits_allowed=5):
+  def remove_duplicate(self, query, sentence_list, edits_allowed=9):
     if query in sentence_list:
       sentence_list.remove(query)
       if self.debug:
