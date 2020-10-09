@@ -70,10 +70,14 @@ def ask_query_question(db_data, questions, db, data):
     for s in db_entry[db_data["A_model"]].keys():
         print("%d."%(int(s) + 1), db_entry[db_data["A_model"]][s])
     print()
+    print("Group B sentences:")
+    for s in db_entry[db_data["B_model"]].keys():
+        print("%d."%(int(s) + 1), db_entry[db_data["B_model"]][s])
+    print()
 
     q_dict = [x for x in questions["variable"] if x["title"] == db_data["variable"]][0]
 
-    print(q_dict["question_text"]%(q_dict["dynamic_options"][0]))
+    print(q_dict["question_text"])
 
     valid_response = False
     while not valid_response:
@@ -89,38 +93,9 @@ def ask_query_question(db_data, questions, db, data):
             print()
         if not valid_response:
             print("Invalid response. Please try again.")
-            print(q_dict["question_text"]%(q_dict["dynamic_options"][0]))
-            print(q_dict["options_prompt"])
-    
-    print("Group B sentences:")
-    for s in db_entry[db_data["B_model"]].keys():
-        print("%d."%(int(s) + 1), db_entry[db_data["B_model"]][s])
-    print()
-
-    q_dict = [x for x in questions["variable"] if x["title"] == db_data["variable"]][0]
-
-    print(q_dict["question_text"]%(q_dict["dynamic_options"][1]))
-
-    valid_response = False
-    while not valid_response:
-        r = input(">").strip()
-
-        if r in q_dict["valid_inputs"]:
-            response["B_score"] = r
-            valid_response = True
-            print()
-        elif r in q_dict["error_handlers"]:
-            response["B_score"] = q_dict["error_handlers"][r]
-            valid_response = True
-            print()
-        if not valid_response:
-            print("Invalid response. Please try again.")
-            print(q_dict["question_text"]%(q_dict["dynamic_options"][0]))
+            print(q_dict["question_text"])
             print(q_dict["options_prompt"])
 
-    # Do required part
-    for q in questions["required"]:
-        ask_demo_question(q, response)
     data["query_responses"].append(response)
 
 
@@ -137,9 +112,9 @@ with open("database.json", "r") as f:
 
 # Randomly pick one variable question
 if random.random() < 0.5:
-    var_string = "utility"
+    var_string = "preference"
 else:
-    var_string = "relevance"
+    var_string = "variety"
 
 question_bank = generate_variable_questions(questions, db, var_string)
 
@@ -170,29 +145,6 @@ print("Please consider the original sentence and suggestions provided and then a
 print("Press Enter to continue.")
 _ = input(">").strip()
 print()
-if var_string == "utility":
-    print("You will be asked about how useful suggested sentences would be in helping you write. This is open-ended; the sentences don't need to be obviously related. Please mark any you think would be useful.")
-    print("Press Enter to continue.")
-    _ = input(">").strip()
-    print("EXAMPLE\n Original Sentence: \"I used to live here,\" he said.")
-    print("A suggestion like \"seven plus seven is fourteen\" is likely not useful as it is unrelated to the original sentence.")
-    print("A suggestion like \"He said he used to live here.\" is likely not useful as it's just rewording the original sentence.")
-    print("A suggestion like \"He told me about his childhood home.\" is likely useful as it's related to the original sentence and expands upon it.")
-    print("A suggestion like \"At eighteen, he moved out of state for college.\" is likely useful even though it's not directly related to original sentence.")
-    print("Press Enter to continue.")
-    _ = input(">").strip()
-    print()
-elif var_string == "relevance":
-    print("You will be asked about how relevant suggested sentences are to the original sentence. Relevant sentences should contain words or themes present in the original.")
-    print("Press Enter to continue.")
-    _ = input(">").strip()
-    print("EXAMPLE\n Original Sentence: \"I used to live here,\" he said.")
-    print("A suggestion like \"seven plus seven is fourteen\" is not relevant as it is unrelated to the original sentence.")
-    print("A suggestion like \"He said he used to live here.\" is relevant as it's just rewording the original sentence.")
-    print("A suggestion like \"As a child he lived with his aunt and uncle in a big gray house.\" is relevant as it is also about living somewhere.")
-    _ = input(">").strip()
-    print()
-
 
 got_quit = False
 n_answered = 0

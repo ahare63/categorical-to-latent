@@ -42,7 +42,7 @@
         }
 
     ],
-    "required": [
+    "variable": [
         {
             "title": "preference",
             "question_text": "If given the choice between seeing the sentences from Group A or the sentences from Group B, which would you prefer?",
@@ -59,57 +59,22 @@
                 "group b": "B",
                 "group B": "B"
             }
-        }
-    ],
-    "variable": [
-        {
-            "title": "utility",
-            "dynamic_options": ["A", "B"],
-            "question_text": "Of the sentences in Group %s, how many might be useful for writing a sentence after the original sentence?",
-            "options_prompt": "Please enter a number from 0 to 5 and then press Enter.",
-            "valid_inputs": ["0", "1", "2", "3", "4", "5"],
-            "error_handlers": {
-                "zero": "0",
-                "Zero": "0",
-                "none": "0",
-                "None": "0",
-                "one": "1",
-                "One": "1",
-                "Two": "2",
-                "two": "2",
-                "three": "3",
-                "Three": "3",
-                "four": "4",
-                "Four": "4",
-                "Five": "5",
-                "five": "5",
-                "all": "5",
-                "All": "5"
-            }
         },
         {
-            "title": "relevance",
-            "dynamic_options": ["A", "B"],
-            "question_text": "Of the sentences in Group %s, how many are relevant to the original sentence?",
-            "options_prompt": "Please enter a number from 0 to 5 and then press Enter.",
-            "valid_inputs": ["0", "1", "2", "3", "4", "5"],
+            "title": "variety",
+            "question_text": "Of Group A and Group B, which provides a better variety of related sentences?",
+            "options_text": "A. Group A; B. Group B",
+            "options_prompt": "Please enter either A or B and then press Enter.",
+            "valid_inputs": ["A", "B"],
             "error_handlers": {
-                "zero": "0",
-                "Zero": "0",
-                "none": "0",
-                "None": "0",
-                "one": "1",
-                "One": "1",
-                "Two": "2",
-                "two": "2",
-                "three": "3",
-                "Three": "3",
-                "four": "4",
-                "Four": "4",
-                "Five": "5",
-                "five": "5",
-                "all": "5",
-                "All": "5"
+                "a": "A",
+                "b": "B",
+                "Group A": "A",
+                "group a": "A",
+                "group A": "A",
+                "Group B": "B",
+                "group b": "B",
+                "group B": "B"
             }
         }
     ],   
