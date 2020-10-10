@@ -365,7 +365,7 @@ class SimilarSentences():
             distance_matrix[i, j] = self.wmd_default
 
     # Use the dynamic programming approach
-    else:
+    elif self.use_wmd_memory:
       for i, t1 in dictionary.items():
           for j, t2 in dictionary.items():
               if not t1 in docset1 or not t2 in docset2:
@@ -379,5 +379,15 @@ class SimilarSentences():
               else:
                 distance_matrix[i, j] = sqrt(np.sum((np.asarray(self.embedder.emb(t1)) - np.asarray(self.embedder.emb(t2)))**2))
                 self.wmd_memory[(t1, t2)] = distance_matrix[i, j]
+
+    # Use original formulation
+    else:
+      for i, t1 in dictionary.items():
+        for j, t2 in dictionary.items():
+            if not t1 in docset1 or not t2 in docset2:
+                continue
+            # Compute Euclidean distance between word vectors and save it.
+            else:
+              distance_matrix[i, j] = sqrt(np.sum((np.asarray(self.embedder.emb(t1)) - np.asarray(self.embedder.emb(t2)))**2))
 
     return distance_matrix
