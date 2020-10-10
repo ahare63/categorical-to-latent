@@ -320,7 +320,7 @@ class SimilarSentences():
           return [self.ind_2_sen[x] for _, x in sorted(zip(scores, self.ind_2_sen.keys()), key=lambda t: t[0])[:self.k]]
 
   """Helper function for estimation of WMD"""
-  def get_wmd_distance_matrix(self, d1, d2, approx=False):
+  def get_wmd_distance_matrix(self, d1, d2):
     # Initialize data if necessary
     if self.word_2_emb is None:
       self.embed_words()
@@ -336,7 +336,7 @@ class SimilarSentences():
     distance_matrix = np.zeros((vocab_len, vocab_len), dtype=np.double)
     
     # Use the approximation method
-    if approx:
+    if self.use_wmd_estimate:
       # If we've just run d1, used cached results
       if self.wmd_prev_query == docset1 and self.wmd_neighbors is not None:
         # Use the cached results
