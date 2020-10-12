@@ -33,6 +33,7 @@ class SimilarSentences():
     self.debug = False              # If True, print information
     self.prevent_duplicate = True   # If True, prevent results from returning something very close to the query sentence
     self.sen_max_len = None         # The maximum length of sentences to consider
+    self.set_cover_min = 0          # The minimum number of tokens allowed in sentences returned by set cover
 
     self.sen_index = None       # faiss index containing average embeddings for a sentence
     self.sen_2_ind = None       # Mapping from string sentence to its number in the index
@@ -54,7 +55,8 @@ class SimilarSentences():
   # Update search parameters, especially those used for set cover
   def update_search_params(self, r=None, k=None, length_penalty=None, use_wt=None, 
                             use_dis=None, wmd_k=None, wmd_default=None, use_wmd_estimate=None, 
-                            use_wmd_memory=None, debug=None, prevent_duplicate=None, sen_max_len=None):
+                            use_wmd_memory=None, debug=None, prevent_duplicate=None, sen_max_len=None,
+                            set_cover_min=None):
     if r is not None:
       self.r = r
     if k is not None:
@@ -79,6 +81,8 @@ class SimilarSentences():
       self.prevent_duplicate = prevent_duplicate
     if sen_max_len is not None:
       self.sen_max_len = sen_max_len
+    if set_cover_min is not None:
+      self.set_cover_min = set_cover_min
     # Reset the previous query after each update  
     self.wmd_prev_query = None
 
@@ -212,6 +216,9 @@ class SimilarSentences():
   def set_cover_score(self, query, db_sentence, word_wt, word_dis):
     score = 0
     matched_words = {}
+    # Ignore very short sentences
+    if len(db_sentence) < self.set_cover_min:
+      return 0, {}
     for word in set(db_sentence):
       if word in query:
         wt_score = word_wt[word] if self.use_wt else 1
