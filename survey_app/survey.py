@@ -84,11 +84,11 @@ def ask_query_question(db_data, questions, db, data):
         r = input(">").strip()
 
         if r in q_dict["valid_inputs"]:
-            response["A_score"] = r
+            response["result"] = r
             valid_response = True
             print()
         elif r in q_dict["error_handlers"]:
-            response["A_score"] = q_dict["error_handlers"][r]
+            response["result"] = q_dict["error_handlers"][r]
             valid_response = True
             print()
         if not valid_response:

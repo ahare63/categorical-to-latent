@@ -52,30 +52,14 @@
     },
 
     "set_cover": {
-        "relevance": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
-        "utility": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
         "wins": {
-            "relevance": {
+            "preference": {
                 "embedding_average": 0,
                 "word_movers_distance": 0,
                 "jaccard": 0,
                 "edit_distance": 0
             },
-            "utility": {
+            "variety": {
                 "embedding_average": 0,
                 "word_movers_distance": 0,
                 "jaccard": 0,
@@ -83,13 +67,13 @@
             }
         },
         "losses": {
-            "relevance": {
+            "preference": {
                 "embedding_average": 0,
                 "word_movers_distance": 0,
                 "jaccard": 0,
                 "edit_distance": 0
             },
-            "utility": {
+            "variety": {
                 "embedding_average": 0,
                 "word_movers_distance": 0,
                 "jaccard": 0,
@@ -99,30 +83,14 @@
     },
 
     "weighted_set_cover": {
-        "relevance": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
-        "utility": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
         "wins": {
-            "relevance": {
+            "preference": {
                 "embedding_average": 0,
                 "word_movers_distance": 0,
                 "jaccard": 0,
                 "edit_distance": 0
             },
-            "utility": {
+            "variety": {
                 "embedding_average": 0,
                 "word_movers_distance": 0,
                 "jaccard": 0,
@@ -130,13 +98,13 @@
             }
         },
         "losses": {
-            "relevance": {
+            "preference": {
                 "embedding_average": 0,
                 "word_movers_distance": 0,
                 "jaccard": 0,
                 "edit_distance": 0
             },
-            "utility": {
+            "variety": {
                 "embedding_average": 0,
                 "word_movers_distance": 0,
                 "jaccard": 0,
@@ -146,38 +114,22 @@
     },
 
     "embedding_average": {
-        "relevance": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
-        "utility": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
         "wins": {
-            "relevance": {
+            "preference": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             },
-            "utility": {
+            "variety": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             }
         },
         "losses": {
-            "relevance": {
+            "preference": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             },
-            "utility": {
+            "variety": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             }
@@ -185,38 +137,22 @@
     },
 
     "word_movers_distance": {
-        "relevance": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
-        "utility": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
         "wins": {
-            "relevance": {
+            "preference": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             },
-            "utility": {
+            "variety": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             }
         },
         "losses": {
-            "relevance": {
+            "preference": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             },
-            "utility": {
+            "variety": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             }
@@ -224,38 +160,22 @@
     },
 
     "jaccard": {
-        "relevance": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
-        "utility": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
         "wins": {
-            "relevance": {
+            "preference": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             },
-            "utility": {
+            "variety": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             }
         },
         "losses": {
-            "relevance": {
+            "preference": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             },
-            "utility": {
+            "variety": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             }
@@ -263,38 +183,22 @@
     },
 
     "edit_distance": {
-        "relevance": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
-        "utility": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0
-        },
         "wins": {
-            "relevance": {
+            "preference": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             },
-            "utility": {
+            "variety": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             }
         },
         "losses": {
-            "relevance": {
+            "preference": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             },
-            "utility": {
+            "variety": {
                 "set_cover": 0,
                 "weighted_set_cover": 0
             }

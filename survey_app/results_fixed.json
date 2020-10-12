@@ -1,0 +1,217 @@
+{
+  "num_responses": 47,
+  "major": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 46,
+    "E": 1,
+    "A_text": "Not a student/Undecided",
+    "B_text": "Humanities",
+    "C_text": "Social Sciences",
+    "D_text": "Engineering/Hard Sciences",
+    "E_text": "Other"
+  },
+  "frequency": {
+    "A": 22,
+    "B": 21,
+    "C": 4,
+    "D": 0,
+    "A_text": "Never",
+    "B_text": "A few times a year",
+    "C_text": "A few times a month",
+    "D_text": "Several times a week"
+  },
+  "adoption": {
+    "A": 3,
+    "B": 9,
+    "C": 16,
+    "D": 16,
+    "E": 3,
+    "A_text": "Not at all likely",
+    "B_text": "Not very likely",
+    "C_text": "Neutral",
+    "D_text": "Somewhat likely",
+    "E_text": "Very likely"
+  },
+  "level": {
+    "A": 0,
+    "B": 5,
+    "C": 22,
+    "D": 20,
+    "E": 0,
+    "A_text": "Not at all well",
+    "B_text": "Not very well",
+    "C_text": "Somewhat well",
+    "D_text": "Very well",
+    "E_text": "Extremely well"
+  },
+  "set_cover": {
+    "wins": {
+      "preference": {
+        "embedding_average": 97,
+        "word_movers_distance": 95,
+        "jaccard": 139,
+        "edit_distance": 98,
+        "win_percentage": 0.43
+      },
+      "variety": {
+        "embedding_average": 49,
+        "word_movers_distance": 41,
+        "jaccard": 66,
+        "edit_distance": 46,
+        "win_percentage": 0.39
+      }
+    },
+    "losses": {
+      "preference": {
+        "embedding_average": 162,
+        "word_movers_distance": 162,
+        "jaccard": 116,
+        "edit_distance": 118
+      },
+      "variety": {
+        "embedding_average": 87,
+        "word_movers_distance": 86,
+        "jaccard": 70,
+        "edit_distance": 68
+      }
+    }
+  },
+  "weighted_set_cover": {
+    "wins": {
+      "preference": {
+        "embedding_average": 75,
+        "word_movers_distance": 58,
+        "jaccard": 102,
+        "edit_distance": 95,
+        "win_percentage": 0.35
+      },
+      "variety": {
+        "embedding_average": 23,
+        "word_movers_distance": 44,
+        "jaccard": 43,
+        "edit_distance": 31,
+        "win_percentage": 0.29
+      }
+    },
+    "losses": {
+      "preference": {
+        "embedding_average": 133,
+        "word_movers_distance": 172,
+        "jaccard": 145,
+        "edit_distance": 170
+      },
+      "variety": {
+        "embedding_average": 89,
+        "word_movers_distance": 99,
+        "jaccard": 71,
+        "edit_distance": 82
+      }
+    }
+  },
+  "embedding_average": {
+    "wins": {
+      "preference": {
+        "set_cover": 162,
+        "weighted_set_cover": 133,
+        "set_cover_win_percentage": 0.65,
+        "weighted_set_cover_win_percentage": 0.64
+      },
+      "variety": {
+        "set_cover": 87,
+        "weighted_set_cover": 89,
+        "set_cover_win_percentage": 0.64,
+        "weighted_set_cover_win_percentage": 0.79
+      }
+    },
+    "losses": {
+      "preference": {
+        "set_cover": 97,
+        "weighted_set_cover": 75
+      },
+      "variety": {
+        "set_cover": 49,
+        "weighted_set_cover": 23
+      }
+    }
+  },
+  "word_movers_distance": {
+    "wins": {
+      "preference": {
+        "set_cover": 162,
+        "weighted_set_cover": 172,
+        "set_cover_win_percentage": 0.63,
+        "weighted_set_cover_win_percentage": 0.25
+      },
+      "variety": {
+        "set_cover": 86,
+        "weighted_set_cover": 99,
+        "set_cover_win_percentage": 0.68,
+        "weighted_set_cover_win_percentage": 0.69
+      }
+    },
+    "losses": {
+      "preference": {
+        "set_cover": 95,
+        "weighted_set_cover": 58
+      },
+      "variety": {
+        "set_cover": 41,
+        "weighted_set_cover": 44
+      }
+    }
+  },
+  "jaccard": {
+    "wins": {
+      "preference": {
+        "set_cover": 116,
+        "weighted_set_cover": 145,
+        "set_cover_win_percentage": 0.45,
+        "weighted_set_cover_win_percentage": 0.59
+      },
+      "variety": {
+        "set_cover": 70,
+        "weighted_set_cover": 71,
+        "set_cover_win_percentage": 0.4,
+        "weighted_set_cover_win_percentage": 0.59
+      }
+    },
+    "losses": {
+      "preference": {
+        "set_cover": 139,
+        "weighted_set_cover": 102
+      },
+      "variety": {
+        "set_cover": 66,
+        "weighted_set_cover": 43
+      }
+    }
+  },
+  "edit_distance": {
+    "wins": {
+      "preference": {
+        "set_cover": 118,
+        "weighted_set_cover": 170,
+        "set_cover_win_percentage": 0.55,
+        "weighted_set_cover_win_percentage": 0.64
+      },
+      "variety": {
+        "set_cover": 68,
+        "weighted_set_cover": 82,
+        "set_cover_win_percentage": 0.60,
+        "weighted_set_cover_win_percentage": 0.73
+      }
+    },
+    "losses": {
+      "preference": {
+        "set_cover": 98,
+        "weighted_set_cover": 95
+      },
+      "variety": {
+        "set_cover": 46,
+        "weighted_set_cover": 31
+      }
+    }
+  }
+}

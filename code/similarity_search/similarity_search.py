@@ -23,7 +23,7 @@ class SimilarSentences():
     self.use_wt = False             # Use the (TF-IDF) weights as part of the set cover calculation
     self.use_dis = False            # Use the (Euclidean) distance between this and the original word to up-weight closer matches
     self.tfidf = None               # TF-IDF model, used with calc_wt
-    self.wmd_k = 10                 # Number of non-zero values to use for wmd estimation
+    self.wmd_k = 20                 # Number of non-zero values to use for wmd estimation
     self.wmd_default = np.inf       # Value to use for all neighbors > wmd_kth closest
     self.use_wmd_estimate = False   # If True, use the wmd estimate. Otherwise, use original
     self.use_wmd_memory = True      # If True, use wmd with "memory". Otherwise, use original.
@@ -32,6 +32,7 @@ class SimilarSentences():
     self.wmd_prev_query = None      # The query corresponding to wmd_neighbors
     self.debug = False              # If True, print information
     self.prevent_duplicate = True   # If True, prevent results from returning something very close to the query sentence
+    self.sen_max_len = None         # The maximum length of sentences to consider
 
     self.sen_index = None       # faiss index containing average embeddings for a sentence
     self.sen_2_ind = None       # Mapping from string sentence to its number in the index
@@ -53,7 +54,7 @@ class SimilarSentences():
   # Update search parameters, especially those used for set cover
   def update_search_params(self, r=None, k=None, length_penalty=None, use_wt=None, 
                             use_dis=None, wmd_k=None, wmd_default=None, use_wmd_estimate=None, 
-                            use_wmd_memory=None, debug=None, prevent_duplicate=None):
+                            use_wmd_memory=None, debug=None, prevent_duplicate=None, sen_max_len=None):
     if r is not None:
       self.r = r
     if k is not None:
@@ -76,6 +77,10 @@ class SimilarSentences():
       self.debug = debug
     if prevent_duplicate is not None:
       self.prevent_duplicate = prevent_duplicate
+    if sen_max_len is not None:
+      self.sen_max_len = sen_max_len
+    # Reset the previous query after each update  
+    self.wmd_prev_query = None
 
   # Sets the list of stopwords, either from new_list (if it's not None)
   # or from a default list if make_default is True
@@ -99,6 +104,9 @@ class SimilarSentences():
       res = process_sentences.get_sentence_embedding(sen, self.embedder, self.stopwords, return_tokenized=True)
       if res is not None:
         sen_str = " ".join(sen)
+        # Skip sentences that are too long
+        if self.sen_max_len is not None and len(res[1]) > self.sen_max_len:
+          continue
         self.sen_2_emb[sen_str] = res[0]
         ind = len(self.sen_2_emb) - 1
         self.sen_2_ind[sen_str] = ind
@@ -288,7 +296,7 @@ class SimilarSentences():
           # We can't index these results, so we have to check exhaustively
           scores = []
           for x in candidates:
-            distance_matrix = self.get_wmd_distance_matrix(q_list, x) if self.use_wmd_estimate else None
+            distance_matrix = self.get_wmd_distance_matrix(q_list, x)
             scores.append(utils.wmdistance(q_list, x, self.embedder, distance_matrix=distance_matrix))
           # Sort and return top k results
           return [self.ind_2_sen[x] for _, x in sorted(zip(scores, self.ind_2_tok_sen.keys()), key=lambda t: t[0])[:self.k]]
@@ -327,7 +335,8 @@ class SimilarSentences():
     if self.word_index is None:
       self.build_word_index()
 
-    dictionary = Dictionary(documents=[d1, d2])
+    dictionary = Dictionary(documents=[d1, d2])  # Used for indices in matrix
+    word_2_ind = {w: i for i, w in Dictionary(documents=[d1]).items()}
     vocab_len = len(dictionary)
 
     # Sets for faster look-up.
@@ -338,23 +347,25 @@ class SimilarSentences():
     # Use the approximation method
     if self.use_wmd_estimate:
       # If we've just run d1, used cached results
-      if self.wmd_prev_query == docset1 and self.wmd_neighbors is not None:
+      if self.wmd_prev_query == word_2_ind and self.wmd_neighbors is not None:
         # Use the cached results
         inds, distances = self.wmd_neighbors
       # If d1 is a new query, get neighbors
       else:
         # Get wmd_k nearest neighbors for each word
-        ind_2_emb = {k: np.asarray(self.embedder.emb(v)) for k, v in dictionary.items()}
-        inds, distances = self.word_index.search(np.asarray(list(ind_2_emb.values())), self.wmd_k)
+        ind_2_emb = {v: np.asarray(self.embedder.emb(k)) for k, v in word_2_ind.items()}
+        inds, distances = self.word_index.search(np.asarray(list(ind_2_emb.values())).astype('float32'), self.wmd_k)
         self.wmd_neighbors = (inds, distances)
-        self.wmd_prev_query = docset1
+        self.wmd_prev_query = word_2_ind
 
       # Populate the distance matrix
       for i, t1 in dictionary.items():
-        d = distances[i]
-        ind = inds[i]
+        if t1 not in docset1 or t1 not in word_2_ind:
+          continue
+        d = distances[word_2_ind[t1]]
+        ind = list(inds[word_2_ind[t1]])
         for j, t2 in dictionary.items():
-          if not t1 in docset1 or not t2 in docset2:
+          if not t2 in docset2:
             continue
           # If t2 is a wmd_k nearest neighbor of t1, add its distance
           try:
