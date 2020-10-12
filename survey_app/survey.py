@@ -7,6 +7,7 @@ def generate_variable_questions(questions, db, var_string):
     question_bank = []
     our_models = ["set_cover", "weighted_set_cover"]
     baselines = ["embedding_average", "word_movers_distance", "jaccard", "edit_distance"]
+    options_text = ["A", "B", "C", "D", "E"]
 
     for ind in db.keys():
         # Make sure one of our models is included
@@ -19,10 +20,9 @@ def generate_variable_questions(questions, db, var_string):
             q_data["option_to_model"] = {}
             models = baselines + [om]
             random.shuffle(models)
-            for i, m in enumerate(models):
-                q_data["option_to_model"][str(i + 1)] = m
-                q_data["model_to_sentence_index"][m] = random.randint(1, 5)
-
+            for o, m in zip(options_text, models):
+                q_data["option_to_model"][o] = m
+                q_data["model_to_sentence_index"][m] = str(random.randint(0, 4))
             question_bank.append(q_data)
 
     random.shuffle(question_bank)
@@ -65,13 +65,11 @@ def ask_query_question(db_data, questions, db, data):
     print("Difficulty level: ", formatted_dif, "\n")
 
     # Do variable part
-    print("Group A sentences:")
-    for s in db_entry[db_data["A_model"]].keys():
-        print("%d."%(int(s) + 1), db_entry[db_data["A_model"]][s])
-    print()
-    print("Group B sentences:")
-    for s in db_entry[db_data["B_model"]].keys():
-        print("%d."%(int(s) + 1), db_entry[db_data["B_model"]][s])
+    print("Suggested Sentences:")
+    for option in ["A", "B", "C", "D", "E"]:
+        model = db_data["option_to_model"][option]
+        sentence = db_entry[model][db_data["model_to_sentence_index"][model]]
+        print(f"{option}. {sentence}")
     print()
 
     q_dict = [x for x in questions["variable"] if x["title"] == db_data["variable"]][0]
@@ -81,15 +79,22 @@ def ask_query_question(db_data, questions, db, data):
     valid_response = False
     while not valid_response:
         r = input(">").strip()
+        resp = [x.strip() for x in r.split(",")]
 
-        if r in q_dict["valid_inputs"]:
-            response["result"] = r
-            valid_response = True
-            print()
-        elif r in q_dict["error_handlers"]:
-            response["result"] = q_dict["error_handlers"][r]
-            valid_response = True
-            print()
+        if len(resp) == 3:
+            unique = []
+            for answer in resp:
+                if answer in q_dict["valid_inputs"]:
+                    if answer not in unique:
+                        unique.append(answer)
+                elif answer in q_dict["error_handlers"]:
+                    if answer not in unique:
+                        unique.append(q_dict["error_handlers"][answer])
+            if len(unique) == 3:
+                unique.sort()
+                response["result"] = unique
+                valid_response = True
+                print()
         if not valid_response:
             print("Invalid response. Please try again.")
             print(q_dict["question_text"])
@@ -136,11 +141,15 @@ print()
 print("The following questions will show you:")
 print("1) the original sentence written as part of the project")
 print("2) the reading/writing level of the suggested sentences")
-print("3) two groups of five sentences meant to help with writing")
+print("3) a group of five sentences meant to help with writing")
 print("Press Enter to continue.")
 _ = input(">").strip()
 print()
-print("Please consider the original sentence and suggestions provided and then answer the questions about them. Once you finish the set of questions about one original sentence and its suggestions, either press Enter to load another question or type `quit` and press Enter to be taken to the end of the survey.")
+print("Please consider the original sentence and suggestions provided. You will be asked to select three you would find most helpful in writing. Please enter the letter corresponding to each of your selections, separated by commas.")
+print("Press Enter to continue.")
+_ = input(">").strip()
+print()
+print("Once you finish each question, either press Enter to load another question or type `quit` and press Enter to be taken to the end of the survey.")
 print("Press Enter to continue.")
 _ = input(">").strip()
 print()

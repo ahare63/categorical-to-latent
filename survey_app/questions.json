@@ -45,36 +45,28 @@
     "variable": [
         {
             "title": "preference",
-            "question_text": "If given the choice between seeing the sentences from Group A or the sentences from Group B, which would you prefer?",
-            "options_text": "A. Group A; B. Group B",
-            "options_prompt": "Please enter either A or B and then press Enter.",
-            "valid_inputs": ["A", "B"],
+            "question_text": "Of the suggested sentences, which three would be most helpful to your writing?",
+            "options_prompt": "Please enter either three letters separated by commas and then press Enter.",
+            "valid_inputs": ["A", "B", "C", "D", "E"],
             "error_handlers": {
                 "a": "A",
                 "b": "B",
-                "Group A": "A",
-                "group a": "A",
-                "group A": "A",
-                "Group B": "B",
-                "group b": "B",
-                "group B": "B"
+                "c": "C",
+                "d": "D",
+                "e": "E"
             }
         },
         {
             "title": "variety",
-            "question_text": "Of Group A and Group B, which provides a better variety of related sentences?",
-            "options_text": "A. Group A; B. Group B",
-            "options_prompt": "Please enter either A or B and then press Enter.",
-            "valid_inputs": ["A", "B"],
+            "question_text": "Of the suggested sentences, which three would be most helpful to your writing?",
+            "options_prompt": "Please enter either three letters separated by commas and then press Enter.",
+            "valid_inputs": ["A", "B", "C", "D", "E"],
             "error_handlers": {
                 "a": "A",
                 "b": "B",
-                "Group A": "A",
-                "group a": "A",
-                "group A": "A",
-                "Group B": "B",
-                "group b": "B",
-                "group B": "B"
+                "c": "C",
+                "d": "D",
+                "e": "E"
             }
         }
     ],   
