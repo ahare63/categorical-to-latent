@@ -105,7 +105,7 @@ class SimilarSentences():
       if res is not None:
         sen_str = " ".join(sen)
         # Skip sentences that are too long
-        if self.sen_max_len is not None and len(res[1]) > self.sen_max_len:
+        if self.sen_max_len is not None and len(sen) > self.sen_max_len:
           continue
         self.sen_2_emb[sen_str] = res[0]
         ind = len(self.sen_2_emb) - 1
