@@ -5,25 +5,25 @@ import random
 # Initialize the questions
 def generate_variable_questions(questions, db, var_string):
     question_bank = []
-    models = ["set_cover", "weighted_set_cover"]
+    our_models = ["set_cover", "weighted_set_cover"]
     baselines = ["embedding_average", "word_movers_distance", "jaccard", "edit_distance"]
 
     for ind in db.keys():
         # Make sure one of our models is included
-        for m in models:
+        for om in our_models:
             # Compare it to each baseline
-            for b in baselines:
-                q_data = {}
-                q_data["variable"] = var_string   
-                q_data["ind"] = ind
-                # Randomly order results
-                if random.random() < 0.5:
-                    q_data["A_model"] = m
-                    q_data["B_model"] = b
-                else:
-                    q_data["B_model"] = m
-                    q_data["A_model"] = b
-                question_bank.append(q_data)
+            q_data = {}
+            q_data["variable"] = var_string   
+            q_data["ind"] = ind
+            q_data["model_to_sentence_index"] = {}
+            q_data["option_to_model"] = {}
+            models = baselines + [om]
+            random.shuffle(models)
+            for i, m in enumerate(models):
+                q_data["option_to_model"][str(i + 1)] = m
+                q_data["model_to_sentence_index"][m] = random.randint(1, 5)
+
+            question_bank.append(q_data)
 
     random.shuffle(question_bank)
     return question_bank
@@ -57,7 +57,6 @@ def ask_demo_question(question, data, prompt=False):
 def ask_query_question(db_data, questions, db, data):
     response = db_data.copy()
     db_entry = db[db_data["ind"]]
-
 
     # Basic info
     print("Original sentence: ", db_entry["query"])
