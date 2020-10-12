@@ -3,16 +3,16 @@
     "query": "I was there but three days.",
     "difficulty": "middle",
     "set_cover": {
-      "0": "Five nights and four days!",
-      "1": "Let me see: four times five is twelve, and four times six is thirteen, and four times seven is\u2014oh dear!",
-      "2": "\u201cWe are already three hours behind time.\u201c",
-      "3": "Bide a day or two.",
-      "4": "The others had been born earlier in the year and were nine and ten months old, while White Fang was only eight months old."
+      "0": "Let me see: four times five is twelve, and four times six is thirteen, and four times seven is\u2014oh dear!",
+      "1": "In three weeks ' time -- three weeks! -- two weeks -- ten days -- we'll have the best ship, sir, and the choicest crew in England.",
+      "2": "On this day for several hours I used my pickaxe vigorously.",
+      "3": "\u201cBetween eight and nine knots the hour.",
+      "4": "\u2018 Seven years and six months! \u2019 Humpty Dumpty repeated thoughtfully."
     },
     "weighted_set_cover": {
       "0": "Let me see: four times five is twelve, and four times six is thirteen, and four times seven is\u2014oh dear!",
-      "1": "One, two!",
-      "2": "\u201cBetween eight and nine knots the hour.",
+      "1": "\u201cBetween eight and nine knots the hour.",
+      "2": "Bide a day or two.",
       "3": "In ten minutes several revolver-shots could be exchanged.\u201c",
       "4": "\u2018 Seven years and six months! \u2019 Humpty Dumpty repeated thoughtfully."
     },
@@ -49,10 +49,10 @@
     "query": "\u201cWas it too much?\u201d I asked, a little faltering.",
     "difficulty": "middle",
     "set_cover": {
-      "0": "\u2018 So much obliged! \u2019 added Tweedledee.",
-      "1": "\u201cIs there never anything else?\u201d he asked.",
-      "2": "I knew little or nothing about men and less about love.",
-      "3": "said Meg, much troubled.",
+      "0": "\u201cDid you say \u2018 What a pity! \u2019?\u201d the Rabbit asked.",
+      "1": "I knew little or nothing about men and less about love.",
+      "2": "said Meg, much troubled.",
+      "3": "Am I asking too much?\u201c",
       "4": "Then from very far away the sound came back, thin and clear and small, like a little bugle answering the big one."
     },
     "weighted_set_cover": {
@@ -60,7 +60,7 @@
       "1": "I knew little or nothing about men and less about love.",
       "2": "They were so small they did not even know about Santa Claus.",
       "3": "\u2026 I must look at that machine.",
-      "4": "Had anything happened?"
+      "4": "They even go so far as to poison the fountains that the birds generally drink from."
     },
     "embedding_average": {
       "0": "But at least, sir,\u201d said I to James, recovering from my little fit of annoyance,\u201cI am Alan\u2019s friend, and if I can be helpful to friends of his, I will not stumble at the risk.\u201d I thought it best to put a fair face on my consent, for I saw Alan troubled; and, besides (thinks I to myself), as soon as my back is turned, they will paper me, as they call it, whether I consent or not.",
@@ -150,7 +150,7 @@
     "weighted_set_cover": {
       "0": "There's plenty of room for dozens inside, and splendid grounds outside.",
       "1": "I saw his eye rest on me; I had still a good mane and tail, which did something for my appearance.",
-      "2": "We are wonderful.",
+      "2": "Nor was that wonderful, seeing how cavalier had been the captain's answer.",
       "3": "The story was so fantastic and incredible, the telling so credible and sober.",
       "4": "His eyes saw correctly, and the nerves carried the vision correctly to his brain."
     },
@@ -243,7 +243,7 @@
       "0": "They could do nothing to relieve him, nor was Clayton over-anxious to attempt anything.",
       "1": "I really MUST get a thinner pencil.",
       "2": "He shall have the best of everything.",
-      "3": "They even slept.",
+      "3": "Darling may not even offer Wendy her mouth, and Mr.",
       "4": "What had actually occurred was this."
     },
     "embedding_average": {
@@ -375,7 +375,7 @@
       "1": "\u2018 And how fast it comes!",
       "2": "Is it agreed?\u201c",
       "3": "My museum hypothesis was confirmed.",
-      "4": "He sits with a drawn cutlass."
+      "4": "You promised not to enter.\u201c"
     },
     "weighted_set_cover": {
       "0": "\u2018 You\u2019d be nowhere.",
@@ -417,15 +417,15 @@
     "query": "I shouted at them as loudly as I could.",
     "difficulty": "middle",
     "set_cover": {
-      "0": "cried Passepartout angrily.",
+      "0": "cried the milkmaid angrily.",
       "1": "I shouted with all my might.",
       "2": "she screamed shrilly, addressing the policeman.",
       "3": "I could hear Poirot shouting and expounding.",
       "4": "The dawn was still indistinct, you must understand."
     },
     "weighted_set_cover": {
-      "0": "cried Passepartout angrily.",
-      "1": "Mercedes screamed.",
+      "0": "cried the milkmaid angrily.",
+      "1": "she screamed shrilly, addressing the policeman.",
       "2": "Everybody made a terrific noise, shouting and yelling and stamping, cheering Grandma.",
       "3": "With loud shouts and curses they aimed their guns full upon the bearers, threatening instant death to any who might lay down his load.",
       "4": "As the dawn was breaking the Wolf Pack yelled Once, twice and again!"
@@ -467,12 +467,12 @@
       "1": "Then he found something else.",
       "2": "It was really almost like a conjuring trick.",
       "3": "They had never seen even two houses standing together.",
-      "4": "observed Conseil."
+      "4": "They evidently understood neither the language of England nor of France."
     },
     "weighted_set_cover": {
       "0": "She heard May say sorrowfully.",
       "1": "Then he found something else.",
-      "2": "observed Conseil.",
+      "2": "observed Passepartout, nervously.",
       "3": "One thing her evidence has shown me.",
       "4": "Then I noted the clock."
     },
@@ -509,18 +509,18 @@
     "query": "The captain is not what he used to be.",
     "difficulty": "middle",
     "set_cover": {
-      "0": "Captain Nemo called.",
-      "1": "asked the colonel.",
-      "2": "asked the captain.",
-      "3": "I am needed.\u201c",
-      "4": "'Bout ship, mates!"
+      "0": "I have said that Captain Farragut had carefully provided his ship with every apparatus for catching the gigantic cetacean.",
+      "1": "\u201cThe captain?\u201c",
+      "2": "I am needed.\u201c",
+      "3": "He called a number.",
+      "4": "All her magic was used to help the people, and she was never known to hurt anyone who was good."
     },
     "weighted_set_cover": {
-      "0": "Captain Nemo called.",
+      "0": "He called a number.",
       "1": "I am needed.\u201c",
       "2": "The Henrietta, well known.\u201c",
-      "3": "At least she utilised them for that purpose.",
-      "4": "But this state of things was provided for."
+      "3": "if, as we supposed, Captain Nemo employed the Nautilus in works of vengeance.",
+      "4": "At least she utilised them for that purpose."
     },
     "embedding_average": {
       "0": "said the captain.",
@@ -557,14 +557,14 @@
     "set_cover": {
       "0": "Probably, I thought, it really never happened.",
       "1": "When he comes many of the larger animals instinctively leave the district entirely, seldom if ever to return; and thus it has always been with the great anthropoids.",
-      "2": "They even slept.",
+      "2": "She was even pleased.",
       "3": "I met him rarely.",
       "4": "They could hardly have fared worse."
     },
     "weighted_set_cover": {
       "0": "When he comes many of the larger animals instinctively leave the district entirely, seldom if ever to return; and thus it has always been with the great anthropoids.",
       "1": "I met him rarely.",
-      "2": "They even slept.",
+      "2": "She was even pleased.",
       "3": "Nobody really wants us.",
       "4": "What had actually occurred was this."
     },
@@ -603,15 +603,15 @@
       "0": "No; not a star was shining and night has not that utter darkness.",
       "1": "It was Monday morning, and Sunday would not come again for a whole week.",
       "2": "\u201cWas Dr. Bauerstein here on Tuesday evening?",
-      "3": "Two nights and a day he spent in the cabin.",
-      "4": "\u201cSaturday?"
+      "3": "On the afternoon of the third day he returned early.",
+      "4": "The cold was great, the constellations shone with wonderful intensity."
     },
     "weighted_set_cover": {
       "0": "The morning charities and ceremonies took so much time that the rest of the day was devoted to preparations for the evening festivities.",
       "1": "No; not a star was shining and night has not that utter darkness.",
-      "2": "\u201cSaturday?",
-      "3": "\u201cGood afternoon.",
-      "4": "\u201cA week!"
+      "2": "They planned to finish it in time to slide downhill Saturday afternoon.",
+      "3": "It was Monday morning, and Sunday would not come again for a whole week.",
+      "4": "Five nights and four days!"
     },
     "embedding_average": {
       "0": "They kept on walking, however, and at night the moon came out and shone brightly.",
@@ -696,14 +696,14 @@
       "1": "\u201cDid you say \u2018 What a pity! \u2019?\u201d the Rabbit asked.",
       "2": "Ship's gone. '",
       "3": "I should fancy he had found her very useful,\u201d remarked Poirot.",
-      "4": "Matt commented."
+      "4": "You see, Aunt Emily always told me I should be provided for."
     },
     "weighted_set_cover": {
       "0": "'Well, ' says the doctor, 'let's bargain. '",
       "1": "\u2018 I thought it looked a little queer.",
-      "2": "\u2018 Oh!",
-      "3": "he was saying.",
-      "4": "Matt commented."
+      "2": "\u2018 We only found it to-day.",
+      "3": "what are you saying?",
+      "4": "Mother told me.\u201c"
     },
     "embedding_average": {
       "0": "\u201cThat\u2019s good,\u201d he said.",
@@ -747,7 +747,7 @@
     "weighted_set_cover": {
       "0": "Of the liquid surface of the sea there was no longer a glimpse.",
       "1": "The sea seemed abandoned.",
-      "2": "\u201cWater?\u201c",
+      "2": "Water was not alive.",
       "3": "\u201cAll this was done last night, and I have counted seventy tracks crossing the river.",
       "4": "The sun was high in the heavens."
     },
@@ -791,11 +791,11 @@
       "4": "\u201cThe flowers are not at all nice, Amy says, and the fresh ones may not arrive in time."
     },
     "weighted_set_cover": {
-      "0": "I says.",
-      "1": "What would Conseil say?",
-      "2": "And up the hill I thought I could see ghosts.",
-      "3": "he was saying.",
-      "4": "Matt commented."
+      "0": "\u201cHe would be better riding,\u201d says she.",
+      "1": "And up the hill I thought I could see ghosts.",
+      "2": "Long John told the story from first to last, with a great deal of spirit and the most perfect truth.",
+      "3": "what are you saying?",
+      "4": "The situation, in any event, was a terrible one, and might be thus stated: if Phileas Fogg was honest he was ruined; if he was a knave, he was caught."
     },
     "embedding_average": {
       "0": "The sequestered situation of this church seems always to have made it a favorite haunt of troubled spirits.",
@@ -830,9 +830,9 @@
     "query": "When he grew tired, he found his way back to the cave and slept.",
     "difficulty": "middle",
     "set_cover": {
-      "0": "They even slept.",
-      "1": "After a time the she-wolf began to grow restless.",
-      "2": "Now they came back to him, one by one.",
+      "0": "After a time the she-wolf began to grow restless.",
+      "1": "Now they came back to him, one by one.",
+      "2": "Her joy at finding him seemed even greater than his joy at being found.",
       "3": "Then Scott looked around the room.",
       "4": "He was coming from the house."
     },
@@ -925,15 +925,15 @@
       "0": "The Custom House clock struck one.",
       "1": "Every eye was turned towards the point indicated.",
       "2": "Blantyre's halloo soon brought them to the spot.",
-      "3": "They even slept.",
-      "4": "Tarzan was touched."
+      "3": "\u201cTo judge from the size of the place, this Palace of Green Porcelain had a great deal more in it than a Gallery of Pal\u00e6ontology; possibly historical galleries; it might be, even a library!",
+      "4": "\u201cWell hit!\u201c"
     },
     "weighted_set_cover": {
       "0": "\u201cBut one thing does strike me.",
       "1": "Every eye was turned towards the point indicated.",
-      "2": "They even slept.",
-      "3": "We had soon touched land in the same place as before and set to provision the block house.",
-      "4": "You attacked me."
+      "2": "We had soon touched land in the same place as before and set to provision the block house.",
+      "3": "\u201cWell hit!\u201c",
+      "4": "She was even pleased."
     },
     "embedding_average": {
       "0": "When his mighty frame struck the spot where the man had been he was no longer there.",
@@ -1067,9 +1067,9 @@
     },
     "weighted_set_cover": {
       "0": "Tarzan now swam to shore and clambered quickly upon dry land.",
-      "1": "By the water!",
-      "2": "\u201cMany thousands of miles across the ocean,\u201che replied.",
-      "3": "They belonged to the tubercle kind which are peculiar to the Indian seas.",
+      "1": "\u201cMany thousands of miles across the ocean,\u201che replied.",
+      "2": "They belonged to the tubercle kind which are peculiar to the Indian seas.",
+      "3": "\u201cBoiling water?\u201c",
       "4": "Dorothy went on, standing this time on her right foot."
     },
     "embedding_average": {
@@ -1115,7 +1115,7 @@
       "0": "Five against three leaves us four to nine.",
       "1": "It was five minutes past eight.",
       "2": "You must have six or seven thousand volumes here.\u201c",
-      "3": "cried several.",
+      "3": "They looked about for several minutes.",
       "4": "\u201cI thought I knew the writing."
     },
     "embedding_average": {
@@ -1151,18 +1151,18 @@
     "query": "He still hoped that behind all that fog stretched the land he so longed for.",
     "difficulty": "middle",
     "set_cover": {
-      "0": "said Ned Land.",
-      "1": "We could not even tell its position behind the curtain of fog; and soon the fog turned to snow.",
-      "2": "John thought it was their second sea and their third night.",
-      "3": "Laura loved Grandma's house.",
+      "0": "We could not even tell its position behind the curtain of fog; and soon the fog turned to snow.",
+      "1": "John thought it was their second sea and their third night.",
+      "2": "Laura loved Grandma's house.",
+      "3": "\u201cThat's all right,\u201csaid the Stork, who was flying along beside them.",
       "4": "Five miles still lay between us, and it was indistinct owing to the mist on the water."
     },
     "weighted_set_cover": {
-      "0": "Terrible indeed!",
-      "1": "Refused also.",
-      "2": "They even slept.",
+      "0": "She was even pleased.",
+      "1": "The real Hook was also in the water.",
+      "2": "\u201cVery much indeed,\u201d said Alice.",
       "3": "\u201cTrue, nevertheless.\u201c",
-      "4": "said Ned Land."
+      "4": "I found it so today."
     },
     "embedding_average": {
       "0": "For some time Rip lay musing on this scene; evening was gradually advancing; the mountains began to throw their long blue shadows over the valleys; he saw that it would be dark long before he could reach the village, and he heaved a heavy sigh when he thought of encountering the terrors of Dame Van Winkle.",
@@ -1298,9 +1298,9 @@
     "weighted_set_cover": {
       "0": "Mouths opened and remained open.",
       "1": "The outside door had been left open, and Captain Nemo closed it as soon as we had entered the first cell.",
-      "2": "The door closed.",
+      "2": "I closed the book and returned to my walk.",
       "3": "It was obviously locked or bolted on the inside.",
-      "4": "I run!"
+      "4": "Which way had she turned?"
     },
     "embedding_average": {
       "0": "Then she went out, and, closing the door, locked it behind her.",
@@ -1482,9 +1482,9 @@
     "weighted_set_cover": {
       "0": "Her turn came next.",
       "1": "My first impulse was one of despair, but my second was towards joy.",
-      "2": "* Village fair.",
-      "3": "The nearest town was far away.",
-      "4": "So Laura turned around and began to walk toward the house."
+      "2": "The nearest town was far away.",
+      "3": "So Laura turned around and began to walk toward the house.",
+      "4": "\u201cAt the hamlet of Kholby.\u201c"
     },
     "embedding_average": {
       "0": "He observed that the butchers stalls contained neither mutton, goat, nor pork; and, knowing also that it is a sacrilege to kill cattle, which are preserved solely for farming, he made up his mind that meat was far from plentiful in Yokohama\u2014nor was he mistaken; and, in default of butcher's meat, he could have wished for a quarter of wild boar or deer, a partridge, or some quails, some game or fish, which, with rice, the Japanese eat almost exclusively.",
@@ -1521,16 +1521,16 @@
     "set_cover": {
       "0": "Charles went down into the room on the ground floor.",
       "1": "We sat and looked out.",
-      "2": "Whose house?",
-      "3": "He waited.",
-      "4": "He stood."
+      "2": "It was from the rear of the house, and upstairs.",
+      "3": "The wigged gentleman sitting opposite, still looking at the ceiling of the court.",
+      "4": "They waited for that."
     },
     "weighted_set_cover": {
-      "0": "He stood.",
-      "1": "Emma went upstairs.",
-      "2": "I looked around the room.",
-      "3": "Pray sit down.",
-      "4": "He waited."
+      "0": "I looked at my watch and stood up.",
+      "1": "Charles went down into the room on the ground floor.",
+      "2": "Cohn was sitting there.",
+      "3": "You sit down too.",
+      "4": "[ She sits down."
     },
     "embedding_average": {
       "0": "He reached out for the book, which was lying on the floor, and sat up against the bedhead.",
@@ -1569,14 +1569,14 @@
       "1": "\u201cPeople take a boy like that.",
       "2": "Are those billions of men really gone?",
       "3": "I thought I'd take a chance.",
-      "4": "Do say something."
+      "4": "Amory attempted to make them look even keener."
     },
     "weighted_set_cover": {
       "0": "Are those billions of men really gone?",
-      "1": "Do say something.",
-      "2": "or man or woman come forth!",
+      "1": "or man or woman come forth!",
+      "2": "Do say something.\u201c",
       "3": "Amory attempted to make them look even keener.",
-      "4": "I took leave."
+      "4": "I'm going to start now and get plenty of sleep."
     },
     "embedding_average": {
       "0": "Would he dare to go home and eat bread that had been earned by Ona, weak and complaining as she was, knowing that he had been given a chance, and had not had the nerve to take it? -- And yet he might argue that way with himself all day, and one glimpse into the fertilizer works would send him away again shuddering.",
@@ -1611,18 +1611,18 @@
     "query": "I should like your opinion on that.",
     "difficulty": "high",
     "set_cover": {
-      "0": "Do say something.",
+      "0": "Do say something.\u201c",
       "1": "She did not really like her.",
       "2": "That must be matter of fact.",
-      "3": "Not even platonic.",
-      "4": "\u201cI have intimated my view of the case: I am incapable of taking any other."
+      "3": "O, he is even in my mistress ' case, Just in her case!",
+      "4": "Oh, a view!"
     },
     "weighted_set_cover": {
-      "0": "Do say something.",
+      "0": "Do say something.\u201c",
       "1": "That must be matter of fact.",
       "2": "But this is splendid, really unique from some points of view.",
-      "3": "Not even platonic.",
-      "4": "You want your neighbours ' opinions."
+      "3": "You want your neighbours ' opinions.",
+      "4": "O, he is even in my mistress ' case, Just in her case!"
     },
     "embedding_average": {
       "0": "I want to have your opinion of her looks.",
@@ -1657,18 +1657,18 @@
     "query": "I attempted to speak, but the words died away on my lips.",
     "difficulty": "high",
     "set_cover": {
-      "0": "come back!\u201c",
-      "1": "How far away!",
-      "2": "Not a word was spoken.",
+      "0": "Not a word would come to her lips.",
+      "1": "Bovary was far away.",
+      "2": "And used perfectly awful language.",
       "3": "His father had arrived home.",
-      "4": "And used perfectly awful language."
+      "4": "Lying on her back, motionless, and with staring eyes, she saw things but vaguely, although she tried to with idiotic persistence."
     },
     "weighted_set_cover": {
       "0": "Not a word was spoken.",
       "1": "The C vocabulary was supplementary to the others and consisted entirely of scientific and technical terms.",
       "2": "I wished to know the meaning of things.",
-      "3": "hear.",
-      "4": "say!"
+      "3": "Wait till you hear what I have to say.",
+      "4": "She remembered the phrase."
     },
     "embedding_average": {
       "0": "About half an hour afterwards he attempted again to speak but was unable; he pressed my hand feebly, and his eyes closed for ever, while the irradiation of a gentle smile passed away from his lips.",
@@ -1706,8 +1706,8 @@
       "0": "He would often spend a whole day settling and resettling in their cases the various stones that he had collected, such as the olive-green chrysoberyl that turns red by lamplight, the cymophane with its wirelike line of silver, the pistachio-coloured peridot, rose-pink and wine-yellow topazes, carbuncles of fiery scarlet with tremulous, four-rayed stars, flame-red cinnamon-stones, orange and violet spinels, and amethysts with their alternate layers of ruby and sapphire.",
       "1": "Here's to my love!",
       "2": "Its gold would wither into grey.",
-      "3": "loved!",
-      "4": "Her face had turned a milky yellow."
+      "3": "Her face had turned a milky yellow.",
+      "4": "With purple clusters blushing through the green."
     },
     "weighted_set_cover": {
       "0": "We all looked -- the knuckle was black and blue.",
@@ -1760,7 +1760,7 @@
       "1": "the shade, before his closing eyes, Of sad Patroclus rose, or seem\u2019d to rise: In the same robe he living wore, he came: In stature, voice, and pleasing look, the same.",
       "2": "Marianne saw and listened with increasing surprise.",
       "3": "Then Justin appeared at the door of the shop.",
-      "4": "Juliet rises."
+      "4": "She set herself, therefore, to gathering violets and wood-anemones, and some scarlet columbines that she found growing in the crevices of a high rock."
     },
     "embedding_average": {
       "0": "The lad flushed up and, going to the window, looked out for a few moments on the green, flickering, sun-lashed garden.",
@@ -1803,10 +1803,10 @@
     },
     "weighted_set_cover": {
       "0": "And yet the thing would still live on.",
-      "1": "It was intolerable.",
-      "2": "indeed!\u201d said Miss Pross.",
-      "3": "in a miserable way.",
-      "4": "Amory tried to plan quickly."
+      "1": "indeed!\u201d said Miss Pross.",
+      "2": "in a miserable way.",
+      "3": "Amory tried to plan quickly.",
+      "4": "Mr. Churchill's loss would be dreadful indeed."
     },
     "embedding_average": {
       "0": "She began, however, seriously to turn her thoughts towards its accomplishment, and had already mentioned their wishes to their kind hostess, who resisted them with all the eloquence of her good-will, when a plan was suggested, which, though detaining them from home yet a few weeks longer, appeared to Elinor altogether much more eligible than any other.",
@@ -1843,14 +1843,14 @@
     "set_cover": {
       "0": "He might even have Harriet in his thoughts at the moment; who could say?",
       "1": "Whether it was a son who would some day avenge his father.",
-      "2": "We must know that we may know.",
-      "3": "Here he embraced his daughter for the last time, got down, and went his way.",
-      "4": "\u201cMr. Reed was my uncle -- my mother's brother.\u201c"
+      "2": "I know another way to the house.",
+      "3": "How much you must have gone through!\u201c",
+      "4": "This is the last time I shall ever remember it myself.\u201c"
     },
     "weighted_set_cover": {
       "0": "I know another way to the house.",
       "1": "He might even have Harriet in his thoughts at the moment; who could say?",
-      "2": "That was the last day before the fiesta.",
+      "2": "It\u2019s Floyd\u2019s last day.",
       "3": "A little later all three were rearrested.",
       "4": "ALL That would hang us every mother\u2019s son."
     },
@@ -1887,11 +1887,11 @@
     "query": "In these days he could never fix his mind on any one subject for more than a few moments at a time.",
     "difficulty": "high",
     "set_cover": {
-      "0": "That was the one thing they could never do.",
-      "1": "Who ever would have thought it?",
-      "2": "In another day or two perhaps; this extreme mildness can hardly last longer\u2014nay, perhaps it may freeze tonight!\u201c",
+      "0": "Not one pulse of his life would ever weaken.",
+      "1": "said Edward, willing to say any thing that might introduce another subject.",
+      "2": "\u201cI could never have thought it.",
       "3": "The nights were cold and the days were hot, and there was always a breeze even in the heat of the day.",
-      "4": "The way you\u2019ve passed these three last days might knock up a Titan."
+      "4": "A thousand things may arise in six months!\u201c"
     },
     "weighted_set_cover": {
       "0": "Gregor hardly slept at all, either night or day.",
@@ -1940,7 +1940,7 @@
       "4": "This successful morning left no pleasant impressions on Lucy."
     },
     "weighted_set_cover": {
-      "0": "Elizabeth looked archly, and turned away.",
+      "0": "Dorian Gray turned and looked at him.",
       "1": "Gatsby's eyes opened and closed.",
       "2": "The boxes were pulled around into various positions, and adjusted with great care.",
       "3": "My lips moved towards hers.",
@@ -1983,14 +1983,14 @@
       "1": "Then I wandered down to the beach and sprawled out on the sand.",
       "2": "\u201cI found it yesterday afternoon.",
       "3": "On the next day nobody mentioned him.",
-      "4": "Tuesday?"
+      "4": "Never make known what you have seen tonight."
     },
     "weighted_set_cover": {
       "0": "\u201cI found it yesterday afternoon.",
       "1": "I have never known you till this evening.",
       "2": "On the next day nobody mentioned him.",
-      "3": "he observed.",
-      "4": "Monday!"
+      "3": "Once in the night I woke and heard the wind blowing.",
+      "4": "Here one could wander unseen."
     },
     "embedding_average": {
       "0": "Very early the next morning I heard him up and astir, wandering from one room to another.",
@@ -2025,18 +2025,18 @@
     "query": "\u201cNevertheless he's an Oxford man.\u201c",
     "difficulty": "high",
     "set_cover": {
-      "0": "\u201cAn Oxford man!\u201c",
-      "1": "Yet heere's a spot Doct.",
-      "2": "Indeed?",
-      "3": "For England?",
-      "4": "However --!"
+      "0": "Here's Romeo's man.",
+      "1": "Though all things foule, would wear the brows of grace Yet Grace must still looke so Macd.",
+      "2": "He is an Oxonian.",
+      "3": "Ile to England Don.",
+      "4": "\u201cIndeed I am."
     },
     "weighted_set_cover": {
-      "0": "Poor man!",
+      "0": "Yet he is such a man!\u201c",
       "1": "I have saved him.\u201d VII.",
-      "2": "Indeed?",
-      "3": "It was to meet a woman.\u201d\u201cTo meet a woman!",
-      "4": "And now it\u2019s an old black one.\u201d\u201cWhat!"
+      "2": "It was to meet a woman.\u201d\u201cTo meet a woman!",
+      "3": "And now it\u2019s an old black one.\u201d\u201cWhat!",
+      "4": "I know nothing about it whatever.\u201d\u201cThere are violets."
     },
     "embedding_average": {
       "0": "\u201cWell, -- he told me once he was an Oxford man.\u201c",
@@ -2072,16 +2072,16 @@
     "difficulty": "high",
     "set_cover": {
       "0": "But one morning -- I forget exactly the day -- but perhaps it was the Tuesday or Wednesday before that evening, he wanted to make a memorandum in his pocket-book; it was about spruce-beer.",
-      "1": "I met her somewhere last night.",
-      "2": "\u201cIt was Monday evening,\u201d I replied,\u201cand this is Thursday night, or rather Friday morning, at present.\u201d\u201cWhat!",
+      "1": "\u201cIt was Monday evening,\u201d I replied,\u201cand this is Thursday night, or rather Friday morning, at present.\u201d\u201cWhat!",
+      "2": "I met her somewhere last night.",
       "3": "Yes, next week.",
       "4": "\u201cOne the first day."
     },
     "weighted_set_cover": {
-      "0": "Tuesday?",
-      "1": "But one morning -- I forget exactly the day -- but perhaps it was the Tuesday or Wednesday before that evening, he wanted to make a memorandum in his pocket-book; it was about spruce-beer.",
-      "2": "Oh yes, Friday or Saturday next.",
-      "3": "Be here all the earlier next morning.\u201c",
+      "0": "But one morning -- I forget exactly the day -- but perhaps it was the Tuesday or Wednesday before that evening, he wanted to make a memorandum in his pocket-book; it was about spruce-beer.",
+      "1": "Oh yes, Friday or Saturday next.",
+      "2": "Be here all the earlier next morning.\u201c",
+      "3": "Are you disengaged Tuesday?\u201c",
       "4": "\u201cThe first evening means so much."
     },
     "embedding_average": {
@@ -2117,18 +2117,18 @@
     "query": "His own soul was looking out at him from the canvas and calling him to judgement.",
     "difficulty": "high",
     "set_cover": {
-      "0": "How do you call the man?",
-      "1": "Can his dear image from my soul depart, Long as the vital spirit moves my heart?",
-      "2": "Rather your eyes must with his judgment look.",
-      "3": "Also, his body was calling for food.",
-      "4": "He was going to rip up the canvas."
+      "0": "or in the spirit of man?",
+      "1": "A strange sympathy betwixt soul and body!",
+      "2": "He was going to rip up the canvas.",
+      "3": "He looks forward to seeing you this afternoon.",
+      "4": "Rather your eyes must with his judgment look."
     },
     "weighted_set_cover": {
       "0": "Rather your eyes must with his judgment look.",
-      "1": "heart!",
-      "2": "or in the spirit of man?",
-      "3": "He looks forward to seeing you this afternoon.",
-      "4": "Wonder what Humbird\u2019s body looked like now."
+      "1": "or in the spirit of man?",
+      "2": "He looks forward to seeing you this afternoon.",
+      "3": "Wonder what Humbird\u2019s body looked like now.",
+      "4": "The men were going forward to the heart of the din."
     },
     "embedding_average": {
       "0": "O the joy of my soul leaning pois\u2019d on itself, receiving identity through materials and loving them, observing characters and absorbing them, My soul vibrated back to me from them, from sight, hearing, touch, reason, articulation, comparison, memory, and the like, The real life of my senses and flesh transcending my senses and flesh, My body done with materials, my sight done with my material eyes, Proved to me this day beyond cavil that it is not my material eyes which finally see, Nor my material body which finally loves, walks, laughs, shouts, embraces, procreates.",
@@ -2170,11 +2170,11 @@
       "4": "How do you think it makes me feel?\u201c"
     },
     "weighted_set_cover": {
-      "0": "Who could say?",
-      "1": "\u201cBut I suppose you must have the whole day.",
+      "0": "You mustn't say these dreadful things.",
+      "1": "How could you suppose so?",
       "2": "\u201cI'd believe anything.",
       "3": "It might take years.",
-      "4": "And used perfectly awful language."
+      "4": "The day passed most pleasantly away; the morning in bustle and shopping, and the evening at one of the theatres."
     },
     "embedding_average": {
       "0": "I wondered if there was anything else I might pray for, and I thought I would like to have some money, so I prayed that I would make a lot of money, and then I started to think how I would make it, and thinking of making money reminded me of the count, and I started wondering about where he was, and regretting I hadn't seen him since that night in Montmartre, and about something funny Brett told me about him, and as all the time I was kneeling with my forehead on the wood in front of me, and was thinking of myself as praying, I was a little ashamed, and regretted that I was such a rotten Catholic, but realized there was nothing I could do about it, at least for a while, and maybe never, but that anyway it was a grand religion, and I only wished I felt religious and maybe I would the next time; and then I was out in the hot sun on the steps of the cathedral, and the forefingers and the thumb of my right hand were still damp, and I felt them dry in the sun.",
@@ -2209,18 +2209,18 @@
     "query": "The voice of the oppressed, pronouncing the doom of oppression!",
     "difficulty": "high",
     "set_cover": {
-      "0": "poor man!",
-      "1": "His voice broke.",
-      "2": "We are doomed.",
-      "3": "Sibyl felt oppressed.",
-      "4": "What Greeks new wandering in the Stygian gloom, Wish your Ulysses shared an equal doom!"
+      "0": "The voice of the poor, demanding that poverty shall cease!",
+      "1": "What Greeks new wandering in the Stygian gloom, Wish your Ulysses shared an equal doom!",
+      "2": "My sufferings were augmented also by the oppressive sense of the injustice and ingratitude of their infliction.",
+      "3": "They will ruin your happiness.",
+      "4": "The strident voices stopped abruptly."
     },
     "weighted_set_cover": {
       "0": "The strident voices stopped abruptly.",
       "1": "My sufferings were augmented also by the oppressive sense of the injustice and ingratitude of their infliction.",
-      "2": "poor man!",
-      "3": "The new Middle groups in effect proclaimed their tyranny beforehand.",
-      "4": "The Voice of the Rain And who art thou?"
+      "2": "The new Middle groups in effect proclaimed their tyranny beforehand.",
+      "3": "The Voice of the Rain And who art thou?",
+      "4": "But wherefore could not I pronounce Amen?"
     },
     "embedding_average": {
       "0": "\u201cI am defending the word of God -- which is one long cry of the human spirit for deliverance from the sway of oppression.",
@@ -2264,9 +2264,9 @@
     "weighted_set_cover": {
       "0": "The breakfast- room door opened.",
       "1": "Except for a light in one of the top windows, the house was all dark.",
-      "2": "O darkness!",
-      "3": "Light entered.",
-      "4": "there she is still, behind the window- curtain."
+      "2": "there she is still, behind the window- curtain.",
+      "3": "\u201cIsabelle!\u201d called her cousin Sally from the doorway of the dressing-room.",
+      "4": "Enter Romeo and Juliet aloft, at the Window."
     },
     "embedding_average": {
       "0": "My first impression as I opened the door was that a fire had broken out, for the room was so filled with smoke that the light of the lamp upon the table was blurred by it.",
@@ -2304,8 +2304,8 @@
       "0": "He must get work!",
       "1": "He would go and look.",
       "2": "Poor stupid dupe! -- Could not even self-interest make you wiser?",
-      "3": "Who could say?",
-      "4": "If I had known what I was coming to see, I could have come provided."
+      "3": "If I had known what I was coming to see, I could have come provided.",
+      "4": "I don't know what made me say it."
     },
     "weighted_set_cover": {
       "0": "He would go and look.",
@@ -2351,14 +2351,14 @@
       "1": "His mother also wanted to go in and visit Gregor relatively soon but his father and sister at first persuaded her against it.",
       "2": "My father and mother knew nothing of that; they only felt how imprudent a match it must be.",
       "3": "He could not even imagine how it would feel to be beaten.",
-      "4": "said Gatsby steadily."
+      "4": "Mr. Lloyd a second time produced his snuff-box."
     },
     "weighted_set_cover": {
       "0": "one moment!\u201d said Rodolphe.",
-      "1": "That was the last day before the fiesta.",
-      "2": "At last!",
-      "3": "Hippolyte might even prosecute him.",
-      "4": "This is feeling your way."
+      "1": "It\u2019s Floyd\u2019s last day.",
+      "2": "The way you\u2019ve passed these three last days might knock up a Titan.",
+      "3": "He must act quickly.",
+      "4": "The thing came gradually."
     },
     "embedding_average": {
       "0": "She ran into the other room to fetch some kind of smelling salts to bring her mother out of her faint; Gregor wanted to help too - he could save his picture later, although he stuck fast to the glass and had to pull himself off by force; then he, too, ran into the next room as if he could advise his sister like in the old days; but he had to just stand behind her doing nothing; she was looking into various bottles, he startled her when she turned round; a bottle fell to the ground and broke; a splinter cut Gregor's face, some kind of caustic medicine splashed all over him; now, without delaying any longer, Grete took hold of all the bottles she could and ran with them in to her mother; she slammed the door shut with her foot.",
@@ -2397,14 +2397,14 @@
       "1": "She had swallowed something by mistake, some dreadful thing they use at theatres.",
       "2": "Facts fled before her like frightened forest things.",
       "3": "Curtains of trees interfered with his ways of vision.",
-      "4": "For that which they died to save can never perish."
+      "4": "This man has disappeared and has escaped from the country."
     },
     "weighted_set_cover": {
       "0": "It was such a little thing -- to ruin us all.",
       "1": "I ruined us both.",
       "2": "what a people lost!",
-      "3": "Across something.",
-      "4": "O'Brien knew everything."
+      "3": "There was something so crude and vulgar about everything of the kind.",
+      "4": "Look at the tree.\u201c"
     },
     "embedding_average": {
       "0": "Such ample leisure had the stone faces, now, for listening to the trees and to the fountain, that the few village scarecrows who, in their quest for herbs to eat and fragments of dead stick to burn, strayed within sight of the great stone courtyard and terrace staircase, had it borne in upon their starved fancy that the expression of the faces was altered.",
@@ -2450,7 +2450,7 @@
       "1": "Uncle Jack won't be back till Monday afternoon.",
       "2": "Yet nothing forced her to go; but she had given her word that she would return that same evening.",
       "3": "Matter of fact, they're absolutely real.",
-      "4": "Good morning!"
+      "4": "Mollie agreed, but she did not sound very convinced."
     },
     "embedding_average": {
       "0": "ere that sad day shall come, A willing ghost to Pluto\u2019s dreary dome!\u201d He said, and feebly drives his friends away: The sorrowing friends his frantic rage obey.",
@@ -2535,14 +2535,14 @@
       "1": "said the third man.",
       "2": "The first one is: don\u2019t disappear with young men.",
       "3": "Why are there trees I never walk under but large and melodious thoughts descend upon me?",
-      "4": "lady!"
+      "4": "Time had little altered his person either."
     },
     "weighted_set_cover": {
-      "0": "Poor woman!",
-      "1": "The great tapestries of trees had darkened to ghosts back at the last edge of twilight.",
-      "2": "Time had little altered his person either.",
+      "0": "The great tapestries of trees had darkened to ghosts back at the last edge of twilight.",
+      "1": "Time had little altered his person either.",
+      "2": "Both the women followed; the second woman being The Vengeance.",
       "3": "Among the men, not one.",
-      "4": "lady!"
+      "4": "The winter was severe."
     },
     "embedding_average": {
       "0": "\u201cBehold the long predestined day I (he cries;) O certain faith of ancient prophecies These ears have heard my royal sire disclose A dreadful story, big with future woes; How, moved with wrath, that careless we convey Promiscuous every guest to every bay, Stern Neptune raged; and how by his command Firm rooted in the surge a ship should stand (A monument of wrath); and mound on mound Should hide our walls, or whelm beneath the ground.",
@@ -2578,10 +2578,10 @@
     "difficulty": "high",
     "set_cover": {
       "0": "We said good night.",
-      "1": "And do you really love him quite well enough?",
+      "1": "But there was time enough yet for little Pearl.",
       "2": "Do you suppose that a man like Cecil would take the slightest notice of anything you say?",
       "3": "\u201cVery nicely dressed, indeed; a remarkably elegant gown.\u201c",
-      "4": "I had been getting something for nothing."
+      "4": "I know perfectly well that I look quite plain after my German lesson."
     },
     "weighted_set_cover": {
       "0": "He knows perfectly well why.",
@@ -2625,16 +2625,16 @@
     "set_cover": {
       "0": "Her hair was gray and stiffly oiled in scallops around her face.",
       "1": "The skin of their arms is like a blue mist, but their shoulders are white and glowing, as if the light fell not from above, but rose from under their skin.",
-      "2": "Do say something.",
-      "3": "\u201cThis next is the last one.\u201c",
-      "4": "Finally turns round. ]"
+      "2": "\u201cThis next is the last one.\u201c",
+      "3": "Finally turns round. ]",
+      "4": "Do say something.\u201c"
     },
     "weighted_set_cover": {
       "0": "\u201cThis next is the last one.\u201c",
       "1": "One the second and two the third.\u201c",
       "2": "Not even of any kind.",
       "3": "The driver leaned his head around.",
-      "4": "Do say something."
+      "4": "Do say something.\u201c"
     },
     "embedding_average": {
       "0": "But she had covered her face and he saw nothing but a slender figure, dark, damp, bobbed hair, and the small white hands with the thumbs that bent back like his.",
@@ -2715,17 +2715,17 @@
     "query": "Look at the number of motor-cars now that followed the riders from town to town in a road race.",
     "difficulty": "high",
     "set_cover": {
-      "0": "A country house!",
-      "1": "Snowball was racing across the long pasture that led to the road.",
-      "2": "Look you now what follows.",
-      "3": "some school or mere religion?",
-      "4": "Listen to what is to follow."
+      "0": "A house in town!",
+      "1": "Faces 1 Sauntering the pavement or riding the country by-road, faces!",
+      "2": "Snowball was racing across the long pasture that led to the road.",
+      "3": "Look you now what follows.",
+      "4": "some school or mere religion?"
     },
     "weighted_set_cover": {
-      "0": "A country house!",
-      "1": "my city!",
-      "2": "This morning, the village school opened.",
-      "3": "Dire is the region, dismal is the way!",
+      "0": "This morning, the village school opened.",
+      "1": "I know another way to the house.",
+      "2": "The city had entirely vanished.",
+      "3": "Faces 1 Sauntering the pavement or riding the country by-road, faces!",
       "4": "\u201cVery good roads around here.\u201c"
     },
     "embedding_average": {
@@ -2771,8 +2771,8 @@
       "0": "It isn't the sort of thing one does.",
       "1": "a great pity indeed!",
       "2": "She is really wonderful, and full of surprises.",
-      "3": "respect nothing!",
-      "4": "I know the type."
+      "3": "I know the type.",
+      "4": "All sorts of horrors were supposed."
     },
     "embedding_average": {
       "0": "Has not my consent been daily asked by his looks, his manner, his attentive and affectionate respect?",
@@ -2809,16 +2809,16 @@
     "set_cover": {
       "0": "It is the last time!",
       "1": "And even technological progress only happens when its products can in some way be used for the diminution of human liberty.",
-      "2": "At this moment whom are you thinking of?\u201c",
-      "3": "She again desired a struggle, not a discussion.",
-      "4": "O day!"
+      "2": "She again desired a struggle, not a discussion.",
+      "3": "At this moment whom are you thinking of?\u201c",
+      "4": "One could question him all day without getting any real information."
     },
     "weighted_set_cover": {
-      "0": "That was the last day before the fiesta.",
-      "1": "For the moment he had even forgotten the dial.",
-      "2": "Which way?",
-      "3": "His spirits required support.",
-      "4": "More seemed necessary."
+      "0": "It\u2019s Floyd\u2019s last day.",
+      "1": "For the moment even Napoleon seemed at a loss.",
+      "2": "His spirits required support.",
+      "3": "Was't not the way?",
+      "4": "O'Brien had seen what he meant without the need for explanation."
     },
     "embedding_average": {
       "0": "Elinor was half inclined to ask her reason for thinking so, because satisfied that none founded on an impartial consideration of their age, characters, or feelings, could be given; \u2014but her mother must always be carried away by her imagination on any interesting subject, and therefore instead of an inquiry, she passed it off with a smile.",
@@ -2862,9 +2862,9 @@
     "weighted_set_cover": {
       "0": "With one accord, though nothing of the kind had been planned beforehand, they flung themselves upon their tormentors.",
       "1": "I have never felt anything of the sort.",
-      "2": "`Three things very dull indeed. '",
-      "3": "\u201cYes -- really in a better way.",
-      "4": "Admirably!"
+      "2": "And yet there were things even worse.",
+      "3": "My mother's are really very good indeed.",
+      "4": "\u201cYes -- really in a better way."
     },
     "embedding_average": {
       "0": "HIGGINS.",
@@ -2903,14 +2903,14 @@
       "1": "He prefers young people, I\u2019m sure.",
       "2": "I shall go home.",
       "3": "He had seen grotesque children huddled upon door-steps, and heard shrieks and oaths from gloomy courts.",
-      "4": "Sorry."
+      "4": "\u201cI am glad he is sorry."
     },
     "weighted_set_cover": {
-      "0": "Sorry.",
-      "1": "By whom can you have heard it mentioned?\u201c",
-      "2": "he observed.",
-      "3": "He was shown up-stairs, and found Lucie at her work, alone.",
-      "4": "Rouge and esprit used to go together."
+      "0": "By whom can you have heard it mentioned?\u201c",
+      "1": "He was shown up-stairs, and found Lucie at her work, alone.",
+      "2": "Rouge and esprit used to go together.",
+      "3": "O'Brien was looking down at him gravely and rather sadly.",
+      "4": "Such a woman as I am sure Fanny will be glad to know."
     },
     "embedding_average": {
       "0": "Once or twice he thought of going away.",
@@ -2947,9 +2947,9 @@
     "set_cover": {
       "0": "\u201cWe'll get one on the way back.\u201c",
       "1": "I felt as I felt once coming home from an out-of-town football game.",
-      "2": "Though this design flowed through his brain even to his lips, still he knew afterward that the desire had not been deeply rooted.",
-      "3": "I shall probably find some work awaiting me.",
-      "4": "I see clearly."
+      "2": "I shall probably find some work awaiting me.",
+      "3": "Though this design flowed through his brain even to his lips, still he knew afterward that the desire had not been deeply rooted.",
+      "4": "\u201cI don't even know where he is -- he's run away to dodge the strike.\u201d That was a pretty mess, indeed."
     },
     "weighted_set_cover": {
       "0": "I have no feeling either way.",
@@ -2992,10 +2992,10 @@
     "difficulty": "high",
     "set_cover": {
       "0": "The sea was very dark and the light made prisms in the water.",
-      "1": "She thought it was time to make up.",
-      "2": "Monday evening he turned up at the flat.",
-      "3": "You say well.",
-      "4": "It kept up day and night for seven days."
+      "1": "Mark it.\u2014You say right, sir: for a Monday morning\u2019twas so indeed.",
+      "2": "She thought it was time to make up.",
+      "3": "It kept up day and night for seven days.",
+      "4": "She watched him well."
     },
     "weighted_set_cover": {
       "0": "Mark it.\u2014You say right, sir: for a Monday morning\u2019twas so indeed.",
@@ -3047,8 +3047,8 @@
       "0": "Shall he turn his spring into summer?",
       "1": "The seals sat up and looked at you.",
       "2": "There will be a total eclipse this year: autumn some time.",
-      "3": "Silly season.",
-      "4": "Farrington was just standing another round when Weathers came back."
+      "3": "Farrington was just standing another round when Weathers came back.",
+      "4": "Once in the fields we never left them again during the rest of our M\u00e9s\u00e9glise walk."
     },
     "embedding_average": {
       "0": "For a long time he stood still and listened to their music, so sweet to a hunter\u2019s ear, when suddenly the fox appeared, threading the solemn aisles with an easy coursing pace, whose sound was concealed by a sympathetic rustle of the leaves, swift and still, keeping the ground, leaving his pursuers far behind; and, leaping upon a rock amid the woods, he sat erect and listening, with his back to the hunter.",
@@ -3085,16 +3085,16 @@
     "set_cover": {
       "0": "Walden is blue at one time and green at another, even from the same point of view.",
       "1": "Left alone, Pierre went on smiling in the same way.",
-      "2": "Talking of one thing or another.",
-      "3": "The last house.",
-      "4": "He stood, holding her head between his hands."
+      "2": "First one thing, then another.",
+      "3": "He stood, holding her head between his hands.",
+      "4": "Think of the superb omnibuses, red and yellow, stopping and starting, punctually in order."
     },
     "weighted_set_cover": {
       "0": "The sailors \u2019 eyes were blue and grey and even black.",
       "1": "Might stop him giving credit another time.",
-      "2": "The last house.",
-      "3": "\u201cOh yes, another thing!",
-      "4": "I feel my body harden, and become pink, yellow, brown."
+      "2": "First one thing, then another.",
+      "3": "I feel my body harden, and become pink, yellow, brown.",
+      "4": "He stood, holding her head between his hands."
     },
     "embedding_average": {
       "0": "A house whose inside is as open and manifest as a bird\u2019s nest, and you can not go in at the front door and out at the back without seeing some of its inhabitants; where to be a guest is to be presented with the freedom of the house, and not to be carefully excluded from seven eighths of it, shut up in a particular cell, and told to make yourself at home there, \u2014in solitary confinement.",
@@ -3138,9 +3138,9 @@
     "weighted_set_cover": {
       "0": "They come too seldom.",
       "1": "Why always take, never give?",
-      "2": "\u2014Just one moment.",
-      "3": "How are things going?",
-      "4": "If you look at them in the right way the accused really can be attractive, quite often."
+      "2": "How are things going?",
+      "3": "If you look at them in the right way the accused really can be attractive, quite often.",
+      "4": "Every one was kind to her and gave her something."
     },
     "embedding_average": {
       "0": "This decision, on the day he intended to go to see the lawyer, took a lot of the strength he needed for his work, he worked exceptionally slowly, he had to remain in his office a long time, and it was already past ten o'clock when he finally stood in front of the lawyer's front door.",
@@ -3184,9 +3184,9 @@
     "weighted_set_cover": {
       "0": "says, Must something clever be created.",
       "1": "Course I never could throw anything straight at school.",
-      "2": "It was useless.",
-      "3": "Too many things for nothing.",
-      "4": "The princess rested her bare round arm on a little table and considered a reply unnecessary."
+      "2": "Too many things for nothing.",
+      "3": "The princess rested her bare round arm on a little table and considered a reply unnecessary.",
+      "4": "And suddenly flinging up his hand, he threw the crumpled notes on the sand."
     },
     "embedding_average": {
       "0": "\u201cTo die... to be killed tomorrow... That I should not exist... That all this should still be, but no me....\u201d And the birches with their light and shade, the curly clouds, the smoke of the campfires, and all that was around him changed and seemed terrible and menacing.",
@@ -3231,8 +3231,8 @@
       "0": "Right, he said.",
       "1": "Look, since you can't sleep, and Mamma can't either, we mustn't go on in this stupid way; we must do something; I'll get one of your books.\u201c",
       "2": "Quite correct, Socrates, if Simonides is to be believed, said Polemarchus interposing.",
-      "3": "Two left.",
-      "4": "He was mistaken."
+      "3": "I left the house in bad humour and walked slowly towards the school.",
+      "4": "We may be mistaken."
     },
     "embedding_average": {
       "0": "Men always did and always will err, and in nothing more than in what they consider right and wrong.\u201d\u201cWhat does harm to another is wrong,\u201d said Pierre, feeling with pleasure that for the first time since his arrival Prince Andrew was roused, had begun to talk, and wanted to express what had brought him to his present state.",
@@ -3269,16 +3269,16 @@
     "set_cover": {
       "0": "It was light enough to see a long way in the deserted street and it seemed more like morning or evening than night.",
       "1": "All for a moment wavered and bent in uncertainty and ambiguity, as if a great moth sailing through the room had shadowed the immense solidity of chairs and tables with floating wings.",
-      "2": "the moths say.",
-      "3": "Friday or Saturday.",
-      "4": "It was a straight dark bar, a shadow shaped something like the letter 'I '."
+      "2": "He even thought something moved on that white spot.",
+      "3": "She has the stealthy yet assured movements (even among tables and chairs) of a wild beast.",
+      "4": "Shadow of my mind."
     },
     "weighted_set_cover": {
-      "0": "Monday morning.",
-      "1": "He made his way in the dark to her bedroom, where a light was burning.",
-      "2": "He even thought something moved on that white spot.",
-      "3": "Friday or Saturday.",
-      "4": "Antient concert rooms."
+      "0": "The dark starry night was followed by a bright cheerful morning.",
+      "1": "He even thought something moved on that white spot.",
+      "2": "What did the letter actually say?",
+      "3": "There are many rooms -- many Bernards.",
+      "4": "The afternoon sun warmed the fields, poured blue into the shadows and reddened the corn."
     },
     "embedding_average": {
       "0": "A shadow flitted through my mind like moths ' wings among chairs and tables in a room in the evening.",
@@ -3359,18 +3359,18 @@
     "query": "She got up and, walking on tiptoe with difficulty, went to the small sitting room.",
     "difficulty": "college",
     "set_cover": {
-      "0": "They were sitting in the large drawing room.",
-      "1": "The little house.",
-      "2": "They came running.",
-      "3": "Pierre went up to his friend and, asking whether they were talking secrets, sat down beside them.",
-      "4": "I went in on tiptoe."
+      "0": "And she came in from the little room.",
+      "1": "He is sitting in their house, talking.",
+      "2": "Pierre went up to his friend and, asking whether they were talking secrets, sat down beside them.",
+      "3": "I went in on tiptoe.",
+      "4": "Alyosha got up to go."
     },
     "weighted_set_cover": {
-      "0": "The little house.",
-      "1": "A large bucket.",
+      "0": "A little boy came running down the stairs.",
+      "1": "Mrs Breen turned up her two large eyes.",
       "2": "She had entered rooms where mourners sat.",
-      "3": "They came running.",
-      "4": "The walk."
+      "3": "Dark caves of carpet shops, big man, Turko the terrible, seated crosslegged, smoking a coiled pipe.",
+      "4": "Sit down here by the table and I\u2019ll sit beside you and look at you, and go on talking."
     },
     "embedding_average": {
       "0": "She passed into the sitting room, stood there thinking awhile, and then went into the maids \u2019 room.",
@@ -3409,14 +3409,14 @@
       "1": "There's no one like him for that. '",
       "2": "Would you say that all men are equal in excellence, or is one man better than another?",
       "3": "She was impressed by something about him, and indeed the last thing she expected of him was that he would come in and speak like this at such a moment.",
-      "4": "Wonderful old lady!"
+      "4": "So I say, \u2018 Let me really play the buffoon."
     },
     "weighted_set_cover": {
-      "0": "\u2014Just one moment.",
-      "1": "That one day he will come again.",
-      "2": "\u201cHe's a dear boy really and most high-minded.\u201c'",
-      "3": "\u2018 Selfish father of men!",
-      "4": "\u201cIt was even better last time,\u201d observed the woman\u2019s voice."
+      "0": "That one day he will come again.",
+      "1": "'For one moment only, ' said Louis.",
+      "2": "\u2018 Selfish father of men!",
+      "3": "\u201cIt was even better last time,\u201d observed the woman\u2019s voice.",
+      "4": "Everything speaks in its own way."
     },
     "embedding_average": {
       "0": "In his old age he reached the clear conviction that nothing but the advice of the great dread spirit could build up any tolerable sort of life for the feeble, unruly, \u2018 incomplete, empirical creatures created in jest. \u2019 And so, convinced of this, he sees that he must follow the counsel of the wise spirit, the dread spirit of death and destruction, and therefore accept lying and deception, and lead men consciously to death and destruction, and yet deceive them all the way so that they may not notice where they are being led, that the poor blind creatures may at least on the way think themselves happy.",
@@ -3452,17 +3452,17 @@
     "difficulty": "college",
     "set_cover": {
       "0": "And he would not kill himself; and she could tell no one.",
-      "1": "The college curriculum.",
-      "2": "I must really.",
-      "3": "The dead smell worse still!",
-      "4": "Both in Petersburg and in Moscow their house was always full of visitors."
+      "1": "He was still fancying that Grushenka really was somewhere in the house.",
+      "2": "But you must never tell.",
+      "3": "I may sometimes talk about Diderot!",
+      "4": "The room was full of people."
     },
     "weighted_set_cover": {
       "0": "How could one help understanding?",
       "1": "We must part, we must part!",
       "2": "They might kill him.",
-      "3": "The college curriculum.",
-      "4": "I gulp it down entire."
+      "3": "I gulp it down entire.",
+      "4": "I may as well give my full opinion from the beginning."
     },
     "embedding_average": {
       "0": "In earlier days I would not have lingered in the sacred grove which surrounded this temple, for, before going upstairs to read, I would steal into the little sitting-room which my uncle Adolphe, a brother of my grandfather and an old soldier who had retired from the service as a major, used to occupy on the ground floor, a room which, even when its opened windows let in the heat, if not actually the rays of the sun which seldom penetrated so far, would never fail to emit that vague and yet fresh odour, suggesting at once an open-air and an old-fashioned kind of existence, which sets and keeps the nostrils dreaming when one goes into a disused gun-room.",
@@ -3543,17 +3543,17 @@
     "query": "She ran to meet her, embraced her, and began to cry on her shoulder.",
     "difficulty": "college",
     "set_cover": {
-      "0": "They came running.",
-      "1": "The moment Nicholas took her hand she could no longer restrain herself and began to cry.",
+      "0": "The moment Nicholas took her hand she could no longer restrain herself and began to cry.",
+      "1": "she cried, running to meet him, whoever might be looking.",
       "2": "An old woman came forward and stood by Stephen\u2019s elbow.",
-      "3": "Rost\u00f3v went to meet them.",
-      "4": "They go, they come."
+      "3": "They go, they come.",
+      "4": "You came and he went."
     },
     "weighted_set_cover": {
       "0": "She took his arm.",
-      "1": "They came running.",
-      "2": "run!\u2019shout the dog\u2010boys.",
-      "3": "An old woman came forward and stood by Stephen\u2019s elbow.",
+      "1": "run!\u2019shout the dog\u2010boys.",
+      "2": "An old woman came forward and stood by Stephen\u2019s elbow.",
+      "3": "she cried, running to lap.",
       "4": "He would shrug his shoulders and laugh."
     },
     "embedding_average": {
@@ -3593,14 +3593,14 @@
       "1": "How could he help telling him, indeed?",
       "2": "And perhaps it may one day be explained.",
       "3": "I shall be asked.",
-      "4": "Time surely would scatter all."
+      "4": "Thou, surely, certainly?"
     },
     "weighted_set_cover": {
       "0": "Very possibly, he said.",
       "1": "How could he help telling him, indeed?",
       "2": "Thou, surely, certainly?",
-      "3": "A badge maybe.",
-      "4": "I am so glad, so delighted!"
+      "3": "I am so glad, so delighted!",
+      "4": "Stephen asked, opening another book."
     },
     "embedding_average": {
       "0": "On such days she would have told us beforehand that we should not see her; if it were because of her lessons, she would say:\u201cIt is too tiresome, I sha 'n't be able to come to-morrow; you will all be enjoying yourselves here without me,\u201cwith an air of regret which to some extent consoled me; if, on the other hand, she had been invited to a party, and I, not knowing this, asked her whether she was coming to play with us, she would reply:\u201cIndeed I hope not!",
@@ -3636,17 +3636,17 @@
     "difficulty": "college",
     "set_cover": {
       "0": "I\u2019ll wait three hours\u2014four, five, six, seven.",
-      "1": "'The wind! '",
+      "1": "Two, four, six, eight, nine.",
       "2": "Prince Andrew and the others gathered round these two.",
-      "3": "Two, four, six, eight, nine.",
-      "4": "What bold and lofty words!\u201d cried the lady."
+      "3": "What bold and lofty words!\u201d cried the lady.",
+      "4": "Half ten and eleven."
     },
     "weighted_set_cover": {
       "0": "I\u2019ll wait three hours\u2014four, five, six, seven.",
       "1": "That\u2019ll be two pounds ten about two pounds eight.",
-      "2": "'The wind! '",
+      "2": "I do not understand phrases. '",
       "3": "What is the meaning of that great word?",
-      "4": "Beautiful phrases."
+      "4": "The wind's coming from hereabouts."
     },
     "embedding_average": {
       "0": "7 Night after night, summer and winter, the torment of storms, the arrow- like stillness of fine (had there been any one to listen) from the upper rooms of the empty house only gigantic chaos streaked with lightning could have been heard tumbling and tossing, as the winds and waves disported themselves like the amorphous bulks of leviathans whose brows are pierced by no light of reason, and mounted one on top of another, and lunged and plunged in the darkness or the daylight (for night and day, month and year ran shapelessly together) in idiot games, until it seemed as if the universe were battling and tumbling, in brute confusion and wanton lust aimlessly by itself.",
@@ -3681,18 +3681,18 @@
     "query": "He smiled back at her with the sudden, craven weakness of the utterly spiritless creature which these crushing words had made of him.",
     "difficulty": "college",
     "set_cover": {
-      "0": "I smiled back.",
-      "1": "Noble words coming.",
-      "2": "Entertainment for man and beast.",
+      "0": "All smiled their smiles.",
+      "1": "The words were strange.",
+      "2": "This man's strength and sanity, his feeling for straight forward simple things, these fishermen, the poor old crazed creature in Mucklebackit's cottage made him feel so vigorous, so relieved of something that he felt roused and triumphant and could not choke back his tears.",
       "3": "The entirely unexpected nature of this explosion -- that is the joy of intercourse.",
-      "4": "S\u00f3nya sighed and made no reply."
+      "4": "You are making phrases about Byron."
     },
     "weighted_set_cover": {
       "0": "What is the meaning of that great word?",
       "1": "You are making phrases about Byron.",
-      "2": "Not completely.",
-      "3": "'A phrase.",
-      "4": "Ivan suddenly laughed and got up."
+      "2": "Ivan suddenly laughed and got up.",
+      "3": "Imaginatively she is of the highest importance; practically she is completely insignificant.",
+      "4": "Some things were very beautiful; others sheer nonsense."
     },
     "embedding_average": {
       "0": "His eyes, glazed with emotion, defiant with tragic intensity, met theirs for a second, and trembled on the verge of recognition; but then, raising his hand, half-way to his face as if to avert, to brush off, in an agony of peevish shame, their normal gaze, as if he begged them to withhold for a moment what he knew to be inevitable, as if he impressed upon them his own child-like resentment of interruption, yet even in the moment of discovery was not to be routed utterly, but was determined to hold fast to something of this delicious emotion, this impure rhapsody of which he was ashamed, but in which he revelled -- he turned abruptly, slammed his private door on them; and, Lily Briscoe and Mr. Bankes, looking uneasily up into the sky, observed that the flock of starlings which Jasper had routed with his gun had settled on the tops of the elm trees.",
@@ -3728,17 +3728,17 @@
     "difficulty": "college",
     "set_cover": {
       "0": "And man has actually invented God.",
-      "1": "Love one another.",
-      "2": "An old plumber named Geraghty.",
-      "3": "Public work, she supposed.",
+      "1": "What lightning!\u201d they called to one another.",
+      "2": "Public work, she supposed.",
+      "3": "An old plumber named Geraghty.",
       "4": "The words alledged sound therefore thus."
     },
     "weighted_set_cover": {
-      "0": "Reflect therefore.",
-      "1": "He who despises himself, nevertheless esteems himself thereby, as a despiser.",
-      "2": "Love one another.",
-      "3": "No indeed.",
-      "4": "And experience tells us that power is not merely a word but an actually existing phenomenon."
+      "0": "It seems, therefore, that however little we may imagine ourselves to be old-fashioned and grandfatherly respectable in other respects, in one thing we are nevertheless the worthy grandchildren of our grandfathers, we last Europeans with good consciences: we also still wear their pigtail. -- Ah!",
+      "1": "And experience tells us that power is not merely a word but an actually existing phenomenon.",
+      "2": "That is likewise clear.",
+      "3": "\u201cSatan, go hence!",
+      "4": "And consequently to disobey, is to Dishonour."
     },
     "embedding_average": {
       "0": "Fifteen years, I answered; and when they have reached fifty years of age, then let those who still survive and have distinguished themselves in every action of their lives and in every branch of knowledge come at last to their consummation: the time has now arrived at which they must raise the eye of the soul to the universal light which lightens all things, and behold the absolute good; for that is the pattern according to which they are to order the State and the lives of individuals, and the remainder of their own lives also; making philosophy their chief pursuit, but, when their turn comes, toiling also at politics and ruling for the public good, not as though they were performing some heroic action, but simply as a matter of duty; and when they have brought up in each generation others like themselves and left them in their place to be governors of the State, then they will depart to the Islands of the Blest and dwell there; and the city will give them public memorials and sacrifices and honour them, if the Pythian oracle consent, as demigods, but if not, as in any case blessed and divine.",
@@ -3783,8 +3783,8 @@
       "0": "That last day idea.",
       "1": "The three hundred and sixty-five bedrooms were full for a month at a time.",
       "2": "For one whole week she was unconscious.",
-      "3": "Six years.",
-      "4": "Silly season."
+      "3": "I gulp it down entire.",
+      "4": "This institution of elders is not founded on theory, but was established in the East from the practice of a thousand years."
     },
     "embedding_average": {
       "0": "My heart is full of tenderness, and I look at my whole life at this moment as though living through it again.\u201d \u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010\u2010 Here I must observe that this last conversation of Father Zossima with the friends who visited him on the last day of his life has been partly preserved in writing.",
@@ -3820,16 +3820,16 @@
     "difficulty": "college",
     "set_cover": {
       "0": "\u201cVery well, very well!\u201d muttered the officer, threateningly, and turning his horse he trotted away, jolting in his saddle.",
-      "1": "\u2014\u2019lldo!",
-      "2": "Too much indeed.",
-      "3": "Den\u00edsov rode past him, leaning back and shouting something.",
+      "1": "Den\u00edsov rode past him, leaning back and shouting something.",
+      "2": "\u2018 Hey, are you dumb? \u2019 he shouted.",
+      "3": "Not even so much.",
       "4": "\u201cThe commander in chief?"
     },
     "weighted_set_cover": {
-      "0": "Too much indeed.",
-      "1": "she yelled.",
-      "2": "\u2014\u2019lldo!",
-      "3": "I know nothing about it though.",
+      "0": "Say \u2018 perhaps \u2019...",
+      "1": "I know nothing about it though.",
+      "2": "Not even so much.",
+      "3": "And all the time he was being removed, he yelled and screamed something incoherent.",
       "4": "Den\u00edsov rode past him, leaning back and shouting something."
     },
     "embedding_average": {
@@ -3865,18 +3865,18 @@
     "query": "He took a mouthful, drew it up, saturated his palate with it and then spat it forth into the grate.",
     "difficulty": "college",
     "set_cover": {
-      "0": "Lenehan came forward.",
-      "1": "I drew back.",
+      "0": "She would go back.",
+      "1": "He turned and saw her.",
       "2": "You came and he went.",
-      "3": "Alyosha got up to go.",
-      "4": "He turned and saw her."
+      "3": "I will set aside this afternoon.",
+      "4": "But an irresistible impulse drew her forward."
     },
     "weighted_set_cover": {
       "0": "They all went back.",
       "1": "Alyosha got up to go.",
       "2": "At last Mademoiselle Bourienne gave a scream and ran away.",
-      "3": "Men, taking her ('I take her body, ' says Ranger.)",
-      "4": "Lenehan came forward."
+      "3": "Men, taking her (' I take her body, ' says Ranger.)",
+      "4": "He takes th \u2019 upper hand of me whenever he sees I\u2019ve a sup taken."
     },
     "embedding_average": {
       "0": "Ivan stepped up to the table, took up the roll of paper and began unfolding it, but suddenly he drew back his fingers, as though from contact with a loathsome reptile.",
@@ -3913,16 +3913,16 @@
     "set_cover": {
       "0": "when so many things are not provided for.",
       "1": "Of the war Princess Mary thought as women do think about wars.",
-      "2": "And the possibility has been acknowledged?",
-      "3": "How fortunate!\u201d he thought.",
+      "2": "How fortunate!\u201d he thought.",
+      "3": "And the possibility has been acknowledged?",
       "4": "It was but two hours \u2019 work."
     },
     "weighted_set_cover": {
       "0": "when so many things are not provided for.",
       "1": "How fortunate!\u201d he thought.",
       "2": "P\u00e9tya no longer thought of presenting his petition.",
-      "3": "They triumph.",
-      "4": "Another failure."
+      "3": "It was but two hours \u2019 work.",
+      "4": "The hunters were formerly a numerous and merry crew here."
     },
     "embedding_average": {
       "0": "But suddenly instead of those chances and that genius which hitherto had so consistently led him by an uninterrupted series of successes to the predestined goal, an innumerable sequence of inverse chances occur\u2014from the cold in his head at Borodin\u00f3 to the sparks which set Moscow on fire, and the frosts\u2014and instead of genius, stupidity and immeasurable baseness become evident.",
@@ -3966,9 +3966,9 @@
     "weighted_set_cover": {
       "0": "What are we scared at and of whom are we afraid?",
       "1": "Mitya was terribly alarmed.",
-      "2": "I was frightened.",
-      "3": "Not annoyed then?",
-      "4": "But that concerned the future."
+      "2": "Princess Mary looked frightened.",
+      "3": "But that concerned the future.",
+      "4": "\u201cHe\u2019s worrying very much about the new building."
     },
     "embedding_average": {
       "0": "He very soon went to sleep, but before he did he thought a little while about his behaviour, he was satisfied with it but felt some surprise that he was not more satisfied; he was seriously worried about Miss B\u00fcrstner because of the captain.",
@@ -4006,15 +4006,15 @@
       "0": "It is surprising how many great men and women a small house will contain.",
       "1": "Yet such as these even are commonly esteemed good citizens.",
       "2": "A wonderful man really.",
-      "3": "He has got splendid soldiers.",
-      "4": "Indeed she did shock people."
+      "3": "Indeed she did shock people.",
+      "4": "He has got splendid soldiers."
     },
     "weighted_set_cover": {
       "0": "Men trampling down women and children.",
-      "1": "A great man?",
-      "2": "Pray, good people!",
-      "3": "She was a wonderful woman.",
-      "4": "He has got splendid soldiers."
+      "1": "Lou heap good man.",
+      "2": "She was a wonderful woman.",
+      "3": "He has got splendid soldiers.",
+      "4": "As a general rule, people, even the wicked, are much more na\u00efve and simple\u2010hearted than we suppose."
     },
     "embedding_average": {
       "0": "This arose from nothing else than his inhuman cruelty, which, with his boundless valour, made him revered and terrible in the sight of his soldiers, but without that cruelty, his other virtues were not sufficient to produce this effect.",
@@ -4050,17 +4050,17 @@
     "difficulty": "college",
     "set_cover": {
       "0": "A tall figure rose from the hammock where it had been sitting, went to the doorway and pulled open the inner doors.",
-      "1": "The door closed.",
+      "1": "He had almost closed the door behind himself, but Leni held the door open with her foot, grabbed his arm and tried to pull him back.",
       "2": "She turned the key in the lock, and left the house alone, shut up, locked.",
-      "3": "The gate was open.",
-      "4": "Her slender bare arms and neck were not beautiful\u2014compared to H\u00e9l\u00e8ne\u2019s her shoulders looked thin and her bosom undeveloped."
+      "3": "Her slender bare arms and neck were not beautiful\u2014compared to H\u00e9l\u00e8ne\u2019s her shoulders looked thin and her bosom undeveloped.",
+      "4": "Wimple suited her small head."
     },
     "weighted_set_cover": {
       "0": "Elizabeth turned her head.",
-      "1": "She shut doors.",
-      "2": "Gluttons, tall, long legs.",
-      "3": "We all flicked our hands to the backs of our heads -- unsuccessfully.",
-      "4": "He had almost closed the door behind himself, but Leni held the door open with her foot, grabbed his arm and tried to pull him back."
+      "1": "Gluttons, tall, long legs.",
+      "2": "We all flicked our hands to the backs of our heads -- unsuccessfully.",
+      "3": "He had almost closed the door behind himself, but Leni held the door open with her foot, grabbed his arm and tried to pull him back.",
+      "4": "He seemed altogether so thin, small, and pathetic."
     },
     "embedding_average": {
       "0": "CHAPTER XIII One night when the old countess, in nightcap and dressing jacket, without her false curls, and with her poor little knob of hair showing under her white cotton cap, knelt sighing and groaning on a rug and bowing to the ground in prayer, her door creaked and Nat\u00e1sha, also in a dressing jacket with slippers on her bare feet and her hair in curlpapers, ran in.",
@@ -4144,15 +4144,15 @@
       "0": "While he was thinking one thing in his brain, I was endeavoring to divine his thought in mine.",
       "1": "Must wheedle her way along.",
       "2": "How strangely must the mind be sophisticated when this sort of state impresses it!",
-      "3": "Mind!",
-      "4": "His words reach where others fall short."
+      "3": "His words reach where others fall short.",
+      "4": "There must be some remote parts even there."
     },
     "weighted_set_cover": {
       "0": "Are you thinking about it even?",
-      "1": "Mind!",
-      "2": "The thought popped into her head violently, irrelevantly (unless old Greene were somehow the cause of it).",
-      "3": "Alyosha believed that implicitly.",
-      "4": "He spoke evenly and deliberately."
+      "1": "The thought popped into her head violently, irrelevantly (unless old Greene were somehow the cause of it).",
+      "2": "Alyosha believed that implicitly.",
+      "3": "He spoke evenly and deliberately.",
+      "4": "Their passage had been booked."
     },
     "embedding_average": {
       "0": "Upon the sort of screen, patterned with different states and impressions, which my consciousness would quietly unfold while I was reading, and which ranged from the most deeply hidden aspirations of my heart to the wholly external view of the horizon spread out before my eyes at the foot of the garden, what was from the first the most permanent and the most intimate part of me, the lever whose incessant movements controlled all the rest, was my belief in the philosophic richness and beauty of the book I was reading, and my desire to appropriate these to myself, whatever the book might be.",
@@ -4194,11 +4194,11 @@
       "4": "Dark lady and fair man."
     },
     "weighted_set_cover": {
-      "0": "today.",
-      "1": "It was also, however, sufficient.",
-      "2": "It was indeed empty, and looked even more dismal empty than it had the previous Sunday.",
-      "3": "Then the next one: a small old woman.",
-      "4": "They were actually fighting."
+      "0": "It was also, however, sufficient.",
+      "1": "It was indeed empty, and looked even more dismal empty than it had the previous Sunday.",
+      "2": "Then the next one: a small old woman.",
+      "3": "They were actually fighting.",
+      "4": "There was something particularly pathetic and resolute in her face today."
     },
     "embedding_average": {
       "0": "She knew he was English, though not one of the large Englishmen her sister admired, for he was always thin; but he had a beautiful fresh colour; and with his big nose, his bright eyes, his way of sitting a little hunched made her think, she had often told him, of a young hawk, that first evening she saw him, when they were playing dominoes, and he had come in -- of a young hawk; but with her he was always very gentle.",
@@ -4234,7 +4234,7 @@
     "difficulty": "college",
     "set_cover": {
       "0": "Vain trifles as they seem, clothes have, they say, more important offices than merely to keep us warm.",
-      "1": "The sun hot.",
+      "1": "towards a new sun?",
       "2": "And some people even insisted that a sweet fragrance came from their bodies.",
       "3": "You must wash it first of all, simply hold it in cold water to stop the pain, and keep it there, keep it there.... Make haste, mamma, some water in a slop\u2010basin.",
       "4": "Alyosha could make no protest, though he had a great longing to remain."
@@ -4244,7 +4244,7 @@
       "1": "Such people remain always the same.",
       "2": "\u201cWere you kept under lock and key?",
       "3": "I will let the others get out before me.",
-      "4": "Just keeping alive."
+      "4": "That is an essential condition."
     },
     "embedding_average": {
       "0": "You must wash it first of all, simply hold it in cold water to stop the pain, and keep it there, keep it there.... Make haste, mamma, some water in a slop\u2010basin.",
@@ -4279,16 +4279,16 @@
     "query": "The waves close over us, the beech leaves meet above our heads.",
     "difficulty": "college",
     "set_cover": {
-      "0": "He was the last one left.",
-      "1": "The others had also come closer.",
-      "2": "Both ends meet.",
-      "3": "Let us go.",
-      "4": "Planted here and in solemn groups were beech trees and oak trees."
+      "0": "The others had also come closer.",
+      "1": "He was the last one left.",
+      "2": "There is this mystery about people when they leave us.",
+      "3": "I will go to the beech wood alone, before lessons.",
+      "4": "By the sad sea waves."
     },
     "weighted_set_cover": {
       "0": "The others had also come closer.",
       "1": "a last ripple of the wave?",
-      "2": "Killing people!",
+      "2": "Everyone has left Moscow and the people are rioting.",
       "3": "But why turn one's head hither and thither?",
       "4": "The sea was more important now than the shore."
     },
@@ -4325,11 +4325,11 @@
     "query": "His softly padded feet played the melody while his fingers swept a scale of variations idly along the railings after each group of notes.",
     "difficulty": "college",
     "set_cover": {
-      "0": "Love one another.",
+      "0": "Perhaps with the help of the poets one could.. A book lay beside me and, opening it, I turned casually enough to Tennyson.",
       "1": "Then very gingerly, I pushed my foot across.",
       "2": "One hand played in the bass the melody of Silent, O Moyle, while the other hand careered in the treble after each group of notes.",
       "3": "She sang a song.",
-      "4": "I turned her music."
+      "4": "They tramped miles along roads."
     },
     "weighted_set_cover": {
       "0": "\u201cYou see what silly tricks nature plays one.",
@@ -4373,9 +4373,9 @@
     "set_cover": {
       "0": "Past time, past history we went.",
       "1": "The historians of culture are quite consistent in regard to their progenitors, the writers of universal histories, for if historical events may be explained by the fact that certain persons treated one another in such and such ways, why not explain them by the fact that such and such people wrote such and such books?",
-      "2": "Let us go.",
-      "3": "That's well!",
-      "4": "She tried to get hold of things by the right end anyhow."
+      "2": "Let us say so.",
+      "3": "She tried to get hold of things by the right end anyhow.",
+      "4": "\u201cRichard's very well."
     },
     "weighted_set_cover": {
       "0": "The others are allowed to go.",
@@ -4418,10 +4418,10 @@
     "difficulty": "college",
     "set_cover": {
       "0": "'The sky is blue, ' he said, 'the grass is green. '",
-      "1": "Ireland my country.",
-      "2": "Which one never does say, he thought.",
+      "1": "Which one never does say, he thought.",
+      "2": "They drank Ireland, England, France, Hungary, the United States of America.",
       "3": "Politely, but very distantly, Mr. Ramsay raised his hand and saluted her as they passed.",
-      "4": "They drank Ireland, England, France, Hungary, the United States of America."
+      "4": "Dreadful experiences raise the question whether he who experiences them is not something dreadful also."
     },
     "weighted_set_cover": {
       "0": "\u2014I thought so, says Joe.",
@@ -4467,14 +4467,14 @@
       "1": "Come, go along!",
       "2": "'We troop upstairs like ponies, ' said Bernard,'stamping, clattering one behind another to take our turns in the bathroom.",
       "3": "Lily thought, looking out to sea.",
-      "4": "He looked around."
+      "4": "Some of the men in the first row groped around in their beards, none of them looked round to see who was shouting."
     },
     "weighted_set_cover": {
       "0": "Lily thought, looking out to sea.",
       "1": "They let me see him at last, he insisted upon saying good\u2010by to me.",
       "2": "\u2014Half one, says Ned.",
-      "3": "Water?",
-      "4": "He looked around."
+      "3": "Water pours down the runnel of my spine.",
+      "4": "Must go prince Bloom told Richie prince."
     },
     "embedding_average": {
       "0": "She said to me, 'Come along round behind the rock, there, and look at the moonlight on the water! '",
@@ -4511,16 +4511,16 @@
     "set_cover": {
       "0": "These men, though enchanted with the sovereign for refusing the command of the army, yet blamed him for such excessive modesty, and only desired and insisted that their adored sovereign should abandon his diffidence and openly announce that he would place himself at the head of the army, gather round him a commander in chief\u2019s staff, and, consulting experienced theoreticians and practical men where necessary, would himself lead the troops, whose spirits would thereby be raised to the highest pitch.",
       "1": "I don\u2019t even know whether I still love him.",
-      "2": "She asked the question and blushed.",
-      "3": "What canst Thou say, indeed?",
+      "2": "What did the letter actually say?",
+      "3": "She asked the question and blushed.",
       "4": "We can\u2019t stop those fellows,\u201d said the staff officer pointing to the soldiers."
     },
     "weighted_set_cover": {
       "0": "Grushenka was standing by the sofa as though still alarmed.",
       "1": "They hadn't come home yet.",
-      "2": "No indeed.",
-      "3": "What did the letter actually say?",
-      "4": "Not with either."
+      "2": "What did the letter actually say?",
+      "3": "\u201cWas he a cavalry officer indeed?",
+      "4": "Mrs. Bast didn't know for certain either."
     },
     "embedding_average": {
       "0": "The regimental commander ran forward on each such occasion, fearing to miss a single word of the commander in chief\u2019s regarding the regiment.",
@@ -4555,18 +4555,18 @@
     "query": "People laughed particularly at his passion for psychology.",
     "difficulty": "college",
     "set_cover": {
-      "0": "People laughed.",
-      "1": "cried Orlando still laughing.",
-      "2": "Psychology lures even most serious people into romancing, and quite unconsciously.",
+      "0": "cried Orlando still laughing.",
+      "1": "Psychology lures even most serious people into romancing, and quite unconsciously.",
+      "2": "\u201cHa-ha-ha!\u201d laughed Pierre.",
       "3": "It was just that passionate desire for love and the hope of satisfying it that restrained him.",
-      "4": "Ha-ha-ha!"
+      "4": "Alyosha showed no particular emotion at the sight of his mother\u2019s grave."
     },
     "weighted_set_cover": {
-      "0": "Now especially.",
+      "0": "1. but especially Judg.",
       "1": "cried Orlando still laughing.",
       "2": "Psychology lures even most serious people into romancing, and quite unconsciously.",
       "3": "It was just that passionate desire for love and the hope of satisfying it that restrained him.",
-      "4": "Nowhere in particular."
+      "4": "Alyosha showed no particular emotion at the sight of his mother\u2019s grave."
     },
     "embedding_average": {
       "0": "People were beside themselves with delight over this new faculty, and the jubilation reached its climax when Kant further discovered a moral faculty in man -- for at that time Germans were still moral, not yet dabbling in the\u201cPolitics of hard fact.\u201c",

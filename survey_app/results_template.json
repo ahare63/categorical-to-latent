@@ -1,5 +1,7 @@
 {
-    "num_responses" : 0,
+    "num_responses": 0,
+    "num_answered_weighted": 0,
+    "num_answered_unweighted": 0,
 
     "major": {
         "A": 0,
@@ -52,156 +54,35 @@
     },
 
     "set_cover": {
-        "wins": {
-            "preference": {
-                "embedding_average": 0,
-                "word_movers_distance": 0,
-                "jaccard": 0,
-                "edit_distance": 0
-            },
-            "variety": {
-                "embedding_average": 0,
-                "word_movers_distance": 0,
-                "jaccard": 0,
-                "edit_distance": 0
-            }
-        },
-        "losses": {
-            "preference": {
-                "embedding_average": 0,
-                "word_movers_distance": 0,
-                "jaccard": 0,
-                "edit_distance": 0
-            },
-            "variety": {
-                "embedding_average": 0,
-                "word_movers_distance": 0,
-                "jaccard": 0,
-                "edit_distance": 0   
-            }
-        }
+        "included_pct_unweighted": 0,
+        "included_count_unweighted": 0
     },
-
     "weighted_set_cover": {
-        "wins": {
-            "preference": {
-                "embedding_average": 0,
-                "word_movers_distance": 0,
-                "jaccard": 0,
-                "edit_distance": 0
-            },
-            "variety": {
-                "embedding_average": 0,
-                "word_movers_distance": 0,
-                "jaccard": 0,
-                "edit_distance": 0
-            }
-        },
-        "losses": {
-            "preference": {
-                "embedding_average": 0,
-                "word_movers_distance": 0,
-                "jaccard": 0,
-                "edit_distance": 0
-            },
-            "variety": {
-                "embedding_average": 0,
-                "word_movers_distance": 0,
-                "jaccard": 0,
-                "edit_distance": 0   
-            }
-        }
+        "included_pct_weighted": 0,
+        "included_count_weighted": 0
     },
-
     "embedding_average": {
-        "wins": {
-            "preference": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            },
-            "variety": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            }
-        },
-        "losses": {
-            "preference": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            },
-            "variety": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            }
-        }
+        "included_pct_weighted": 0,
+        "included_count_weighted": 0,
+        "included_pct_unweighted": 0,
+        "included_count_unweighted": 0
     },
-
     "word_movers_distance": {
-        "wins": {
-            "preference": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            },
-            "variety": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            }
-        },
-        "losses": {
-            "preference": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            },
-            "variety": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            }
-        }
+        "included_pct_weighted": 0,
+        "included_count_weighted": 0,
+        "included_pct_unweighted": 0,
+        "included_count_unweighted": 0
     },
-
     "jaccard": {
-        "wins": {
-            "preference": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            },
-            "variety": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            }
-        },
-        "losses": {
-            "preference": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            },
-            "variety": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            }
-        }
+        "included_pct_weighted": 0,
+        "included_count_weighted": 0,
+        "included_pct_unweighted": 0,
+        "included_count_unweighted": 0
     },
-
     "edit_distance": {
-        "wins": {
-            "preference": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            },
-            "variety": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            }
-        },
-        "losses": {
-            "preference": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            },
-            "variety": {
-                "set_cover": 0,
-                "weighted_set_cover": 0
-            }
-        }
+        "included_pct_weighted": 0,
+        "included_count_weighted": 0,
+        "included_pct_unweighted": 0,
+        "included_count_unweighted": 0
     }
 }
