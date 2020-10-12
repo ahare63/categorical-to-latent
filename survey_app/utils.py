@@ -2,7 +2,7 @@ import glob
 import json
 
 # Go through all responses and condense results into single output
-def get_response_results():
+def get_response_results(include_never=True):
     with open("results_template.json", 'r') as f:
         summary = json.load(f)
     
@@ -17,7 +17,7 @@ def get_response_results():
         summary["frequency"][resp["frequency"]] += 1
         summary["adoption"][resp["adoption"]] += 1
         summary["level"][resp["level"]] += 1
-        if resp["frequency"] == "A":
+        if not include_never and resp["frequency"] == "A":
             continue
 
         # Responses for each comparison
@@ -45,4 +45,25 @@ def get_response_results():
     with open("./results.json", 'w') as f:
         json.dump(summary, f, indent=2)
 
-get_response_results()
+
+# Take data in new_file, add any additional data in new_file to it, and save as new_file
+def update_database(old_file, new_file):
+    with open(old_file, 'r') as f:
+        old = json.load(f)
+    with open(new_file, 'r') as f:
+        new = json.load(f)
+
+    for key in new.keys():
+        new_dict = new[key]
+        old_dict = old[key]
+
+        for k in old_dict.keys():
+            if k not in new_dict:
+                new_dict[k] = old_dict[k]
+    
+    with open(new_file, 'w') as f:
+        json.dump(new, f, indent=2)
+
+
+if __name__ == "__main__":
+    get_response_results()
