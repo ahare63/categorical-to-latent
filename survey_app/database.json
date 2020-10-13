@@ -360,7 +360,11 @@
       "4": "I'm busy.\u201c"
     },
     "edit_distance": {
-      "0": "He was wise."
+      "0": "I was lost.",
+      "1": "He was wise.",
+      "2": "It was very good.",
+      "3": "Ma was surprised, too.",
+      "4": "That was good, too."
     }
   },
   "8": {
@@ -580,9 +584,17 @@
     "jaccard": {
       "0": "\u201cIt can never be the same again.",
       "1": "They never did it again.",
-      "2": "\u201cHe was never kidnapped."
+      "2": "\u201cHe was never kidnapped.",
+      "3": "I never can.",
+      "4": "\u201cIt can never be the same again."
     },
-    "edit_distance": {}
+    "edit_distance": {
+      "0": "\u201cNever.",
+      "1": "Never!",
+      "2": "No news.",
+      "3": "Never!",
+      "4": "No answer."
+    }
   },
   "13": {
     "query": "Above me shone the stars, for the night was very clear.",

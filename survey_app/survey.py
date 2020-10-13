@@ -102,6 +102,7 @@ def ask_query_question(db_data, questions, db, data):
 # Initialization
 data = {}
 user_timestamp = str(datetime.now())
+data["survey_type"] = "head-to-head"
 data["user_timestamp"] = user_timestamp
 data["query_responses"] = []
 
