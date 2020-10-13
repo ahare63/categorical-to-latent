@@ -147,6 +147,18 @@ print("Press Enter to continue.")
 _ = input(">").strip()
 print()
 
+
+if var_string == "preference":
+    print("You will be asked which of two sets of sentences you would prefer when writing. You can interpret this broadly - your preference doesn't need to be based on an obvious or direct connection to the original sentence. You should consider diversity within each set, as very similar sentences are unlikely to be helpful in writing.")
+    print("Press Enter to continue.")
+    _ = input(">").strip()
+    print()
+else:
+    print("You will be asked which of two sets of sentences does a better job of providing varied sentences related to the original sentence. You can interpret this broadly - related sentences don't need to have words in common with the original sentence. Varied sentences might focus on different topics in the original sentence or use synonyms rather than repeating words directly.")
+    print("Press Enter to continue.")
+    _ = input(">").strip()
+    print()
+
 got_quit = False
 n_answered = 0
 while not got_quit and len(question_bank) > 0:
