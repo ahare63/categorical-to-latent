@@ -106,7 +106,6 @@ def ask_query_question(db_data, questions, db, data):
 # Initialization
 data = {}
 user_timestamp = str(datetime.now())
-data[]
 data["survey_type"] = "choose-3"
 data["user_timestamp"] = user_timestamp
 data["query_responses"] = []
