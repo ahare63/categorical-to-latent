@@ -3,3 +3,4 @@ survey_app/responses/
 data/
 survey_app/responses.json
 survey_app/old_responses
+survey_app/results.json

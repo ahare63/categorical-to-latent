@@ -22,9 +22,7 @@ def get_response_results(include_never=True):
 
         # Responses for each comparison
         for r in resp["query_responses"]:
-            # summary[r["A_model"]][r["variable"]][str(r["A_score"])] += 1
-            # summary[r["B_model"]][r["variable"]][str(r["B_score"])] += 1
-            if r["A_score"] == "A":
+            if r["result"] == "A":
                 summary[r["A_model"]]["wins"][r["variable"]][r["B_model"]] += 1
                 summary[r["B_model"]]["losses"][r["variable"]][r["A_model"]] += 1
             else:
@@ -33,13 +31,10 @@ def get_response_results(include_never=True):
 
     # Get averages and win percentages
     for key in ["set_cover", "weighted_set_cover", "embedding_average", "word_movers_distance", "jaccard", "edit_distance"]:
-        # for val in ["utility", "relevance"]:
-        #     res = summary[key][val]
-        #     summary[key][val]["avg"] = round(sum([int(k)*v for k, v in res.items()])/sum(res.values()), 2) if sum(res.values()) != 0 else 0
         for val in ["variety", "preference"]:
             wins = sum(summary[key]["wins"][val].values())
             ls = sum(summary[key]["losses"][val].values())
-            summary[key]["wins"][val]["win_percentage"] = round(wins/(wins + ls), 2)
+            summary[key]["wins"][val]["win_percentage"] = round(wins/(wins + ls), 2) if wins + ls > 0 else 0
 
     # Save results
     with open("./results.json", 'w') as f:
