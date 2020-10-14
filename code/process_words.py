@@ -72,6 +72,10 @@ def get_raw_words(path):
             text += "\n".join(f.readlines()) + "\n"
          # Underscores are used to indicate italics here and should be dropped.        
         text = text.replace("_", "")
+    # Assume this is a plain .txt file
+  else:
+    with open(path, 'r') as f:
+      text = "\n".join(f.readlines())
   # clean text
   text = word_tokenize(text)
   word_2_count = dict(Counter(text).most_common())

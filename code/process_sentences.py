@@ -57,6 +57,13 @@ def get_tokenized_sentences(dataset):
         text = text.replace("_", "")
         tok_sent = [word_tokenize(t) for t in sent_tokenize(text)]
         return tok_sent
+    
+    # Assume .txt document
+    else:
+        with open(dataset, 'r') as f:
+            text = "\n".join(f.readlines())
+        tok_sent = [word_tokenize(t) for t in sent_tokenize(text)]
+        return tok_sent
         
 
 # Check to see if word is in the embedding dictionary. If it is, add it to/update dictionaries and return True
