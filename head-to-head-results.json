@@ -1,10 +1,10 @@
 {
-  "num_responses": 39,
+  "num_responses": 43,
   "major": {
     "A": 1,
     "B": 1,
     "C": 0,
-    "D": 36,
+    "D": 40,
     "E": 1,
     "A_text": "Not a student/Undecided",
     "B_text": "Humanities",
@@ -13,8 +13,8 @@
     "E_text": "Other"
   },
   "frequency": {
-    "A": 16,
-    "B": 17,
+    "A": 17,
+    "B": 20,
     "C": 5,
     "D": 1,
     "A_text": "Never",
@@ -24,9 +24,9 @@
   },
   "adoption": {
     "A": 0,
-    "B": 9,
-    "C": 12,
-    "D": 15,
+    "B": 10,
+    "C": 14,
+    "D": 16,
     "E": 3,
     "A_text": "Not at all likely",
     "B_text": "Not very likely",
@@ -37,8 +37,8 @@
   "level": {
     "A": 1,
     "B": 3,
-    "C": 27,
-    "D": 6,
+    "C": 28,
+    "D": 9,
     "E": 2,
     "A_text": "Not at all well",
     "B_text": "Not very well",
@@ -49,136 +49,136 @@
   "set_cover": {
     "wins": {
       "preference": {
-        "embedding_average": 70,
-        "word_movers_distance": 77,
-        "jaccard": 80,
-        "edit_distance": 77,
-        "win_percentage": 0.44
+        "embedding_average": 72,
+        "word_movers_distance": 78,
+        "jaccard": 85,
+        "edit_distance": 82,
+        "win_percentage": 0.45
       },
       "variety": {
-        "embedding_average": 45,
-        "word_movers_distance": 52,
-        "jaccard": 67,
-        "edit_distance": 47,
+        "embedding_average": 52,
+        "word_movers_distance": 61,
+        "jaccard": 73,
+        "edit_distance": 55,
         "win_percentage": 0.47
       }
     },
     "losses": {
       "preference": {
-        "embedding_average": 104,
-        "word_movers_distance": 93,
-        "jaccard": 98,
+        "embedding_average": 108,
+        "word_movers_distance": 95,
+        "jaccard": 102,
         "edit_distance": 86
       },
       "variety": {
-        "embedding_average": 78,
-        "word_movers_distance": 62,
-        "jaccard": 48,
-        "edit_distance": 52
+        "embedding_average": 88,
+        "word_movers_distance": 77,
+        "jaccard": 55,
+        "edit_distance": 57
       }
     }
   },
   "weighted_set_cover": {
     "wins": {
       "preference": {
-        "embedding_average": 58,
+        "embedding_average": 59,
         "word_movers_distance": 64,
-        "jaccard": 72,
-        "edit_distance": 66,
-        "win_percentage": 0.39
+        "jaccard": 73,
+        "edit_distance": 67,
+        "win_percentage": 0.38
       },
       "variety": {
-        "embedding_average": 35,
-        "word_movers_distance": 56,
-        "jaccard": 59,
-        "edit_distance": 51,
+        "embedding_average": 38,
+        "word_movers_distance": 63,
+        "jaccard": 68,
+        "edit_distance": 60,
         "win_percentage": 0.43
       }
     },
     "losses": {
       "preference": {
-        "embedding_average": 119,
-        "word_movers_distance": 94,
-        "jaccard": 86,
-        "edit_distance": 116
+        "embedding_average": 124,
+        "word_movers_distance": 97,
+        "jaccard": 91,
+        "edit_distance": 118
       },
       "variety": {
-        "embedding_average": 82,
-        "word_movers_distance": 58,
-        "jaccard": 52,
-        "edit_distance": 72
+        "embedding_average": 88,
+        "word_movers_distance": 74,
+        "jaccard": 63,
+        "edit_distance": 80
       }
     }
   },
   "embedding_average": {
     "wins": {
       "preference": {
-        "set_cover": 104,
-        "weighted_set_cover": 119,
+        "set_cover": 108,
+        "weighted_set_cover": 124,
         "win_percentage": 0.64
       },
       "variety": {
-        "set_cover": 78,
-        "weighted_set_cover": 82,
-        "win_percentage": 0.67
+        "set_cover": 88,
+        "weighted_set_cover": 88,
+        "win_percentage": 0.66
       }
     },
     "losses": {
       "preference": {
-        "set_cover": 70,
-        "weighted_set_cover": 58
+        "set_cover": 72,
+        "weighted_set_cover": 59
       },
       "variety": {
-        "set_cover": 45,
-        "weighted_set_cover": 35
+        "set_cover": 52,
+        "weighted_set_cover": 38
       }
     }
   },
   "word_movers_distance": {
     "wins": {
       "preference": {
-        "set_cover": 93,
-        "weighted_set_cover": 94,
+        "set_cover": 95,
+        "weighted_set_cover": 97,
         "win_percentage": 0.57
       },
       "variety": {
-        "set_cover": 62,
-        "weighted_set_cover": 58,
-        "win_percentage": 0.53
+        "set_cover": 77,
+        "weighted_set_cover": 74,
+        "win_percentage": 0.55
       }
     },
     "losses": {
       "preference": {
-        "set_cover": 77,
+        "set_cover": 78,
         "weighted_set_cover": 64
       },
       "variety": {
-        "set_cover": 52,
-        "weighted_set_cover": 56
+        "set_cover": 61,
+        "weighted_set_cover": 63
       }
     }
   },
   "jaccard": {
     "wins": {
       "preference": {
-        "set_cover": 98,
-        "weighted_set_cover": 86,
+        "set_cover": 102,
+        "weighted_set_cover": 91,
         "win_percentage": 0.55
       },
       "variety": {
-        "set_cover": 48,
-        "weighted_set_cover": 52,
-        "win_percentage": 0.44
+        "set_cover": 55,
+        "weighted_set_cover": 63,
+        "win_percentage": 0.46
       }
     },
     "losses": {
       "preference": {
-        "set_cover": 80,
-        "weighted_set_cover": 72
+        "set_cover": 85,
+        "weighted_set_cover": 73
       },
       "variety": {
-        "set_cover": 67,
-        "weighted_set_cover": 59
+        "set_cover": 73,
+        "weighted_set_cover": 68
       }
     }
   },
@@ -186,23 +186,23 @@
     "wins": {
       "preference": {
         "set_cover": 86,
-        "weighted_set_cover": 116,
-        "win_percentage": 0.59
+        "weighted_set_cover": 118,
+        "win_percentage": 0.58
       },
       "variety": {
-        "set_cover": 52,
-        "weighted_set_cover": 72,
-        "win_percentage": 0.56
+        "set_cover": 57,
+        "weighted_set_cover": 80,
+        "win_percentage": 0.54
       }
     },
     "losses": {
       "preference": {
-        "set_cover": 77,
-        "weighted_set_cover": 66
+        "set_cover": 82,
+        "weighted_set_cover": 67
       },
       "variety": {
-        "set_cover": 47,
-        "weighted_set_cover": 51
+        "set_cover": 55,
+        "weighted_set_cover": 60
       }
     }
   }
