@@ -38,7 +38,7 @@ def first(M, N, rho, upsilon, alpha):
   return math.pow(((N - 1) * rho / (M * upsilon)), 1 - alpha)
 
 # Renamed from "main_f" in "uai.py"
-def estimate_KL_divergence(X, Y, k, alphas, gpu=False, distances=None, tree=None, counts=None):
+def estimate_KL_divergence(X, Y, k, alphas, gpu=False, distances=None, tree=None, counts=None, M=None):
     # Prevent error where we try to find more neighbors than there are words to look for
     original_k = k
     k = min(k, X.shape[0])
@@ -57,8 +57,10 @@ def estimate_KL_divergence(X, Y, k, alphas, gpu=False, distances=None, tree=None
             tree = faiss.index_cpu_to_gpu(gpu, 0, tree)
         tree.add(Y)
 
-    N = X.shape[0]
-    M = Y.shape[0]
+    unique = X.shape[0]
+    N = sum(counts)
+    if M == None:
+        M = Y.shape[0]
     res = 0.0
     if counts is None:
         counts = [1]*N
@@ -74,7 +76,7 @@ def estimate_KL_divergence(X, Y, k, alphas, gpu=False, distances=None, tree=None
     bs = []
     for alpha in alphas:
         bs.append(B(k, alpha))
-    for i in range(0, N):
+    for i in range(0, unique):
         rho = distances[i][-1]
         upsilon = upsilons[i][-1]
 
@@ -114,11 +116,11 @@ def estimate_KL_divergence(X, Y, k, alphas, gpu=False, distances=None, tree=None
     return reses
 
 
-def estimate_JS_divergence(X, Y, k, alphas, gpu=False, distances=None, tree=None, counts=None):
+def estimate_JS_divergence(X, Y, k, alphas, gpu=False, distances=None, tree=None, counts=None, M=None):
     M = np.concatenate((X, Y), axis=0)
     div = []
-    left = estimate_KL_divergence(X, M, k, alphas, gpu, distances, tree, counts=counts)
-    right = estimate_KL_divergence(Y, M, k, alphas, gpu, distances, tree, counts=counts)
+    left = estimate_KL_divergence(X, M, k, alphas, gpu, distances, tree, counts=counts, M=M)
+    right = estimate_KL_divergence(Y, M, k, alphas, gpu, distances, tree, counts=counts, M=M)
     for l, r in zip(left, right):
         if 0.5*l + 0.5*r > 1:
             print("ERROR - JS exceeds 1", 0.5*l + 0.5*r)
@@ -249,6 +251,10 @@ def get_kl_divs(dataset, ind_2_p, ind_2_auth, ind_2_embs, ind_2_counts, k=[3, 5,
             if ind_l == ind_r:
                 continue
             r_emb = np.asarray(list(ind_2_embs[ind_r].values()))
+            right_counts = []
+            for ind in ind_2_embs[ind_r].keys():
+                right_counts.append(ind_2_counts[ind_r][ind])
+            M = sum(right_counts)
             results = {}
             if not jsd:
                 x, y = get_intersection(ind_2_p[ind_l], ind_2_p[ind_r])
@@ -257,12 +263,12 @@ def get_kl_divs(dataset, ind_2_p, ind_2_auth, ind_2_embs, ind_2_counts, k=[3, 5,
                     print("Same is infinity")
                 
                 for key in k:
-                    results[key] = np.mean(estimate_KL_divergence(l_emb, r_emb, key, alphas, gpu, distances=auth_2_dis[auth][key], counts=counts))
+                    results[key] = np.mean(estimate_KL_divergence(l_emb, r_emb, key, alphas, gpu, distances=auth_2_dis[auth][key], counts=counts, M=M))
             else:
                 og_kl = jensenshannon(ind_2_p[ind_l], ind_2_p[ind_r], base=2)
                 kl_dict = {}
                 for key in k:
-                    kl_dict[key] = np.mean(estimate_JS_divergence(l_emb, r_emb, key, alphas, gpu, distances=auth_2_dis[auth][key], counts=counts))
+                    kl_dict[key] = np.mean(estimate_JS_divergence(l_emb, r_emb, key, alphas, gpu, distances=auth_2_dis[auth][key], counts=counts, M=M))
 
             results["original"] = og_kl
             comps[auth_r] = results
