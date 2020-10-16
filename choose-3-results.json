@@ -1,12 +1,12 @@
 {
-  "num_responses": 12,
-  "num_answered_weighted": 279,
-  "num_answered_unweighted": 273,
+  "num_responses": 58,
+  "num_answered_weighted": 1508,
+  "num_answered_unweighted": 1492,
   "major": {
     "A": 0,
     "B": 0,
     "C": 0,
-    "D": 12,
+    "D": 58,
     "E": 0,
     "A_text": "Not a student/Undecided",
     "B_text": "Humanities",
@@ -15,21 +15,21 @@
     "E_text": "Other"
   },
   "frequency": {
-    "A": 3,
-    "B": 5,
-    "C": 3,
-    "D": 1,
+    "A": 14,
+    "B": 32,
+    "C": 10,
+    "D": 2,
     "A_text": "Never",
     "B_text": "A few times a year",
     "C_text": "A few times a month",
     "D_text": "Several times a week"
   },
   "adoption": {
-    "A": 0,
-    "B": 4,
-    "C": 1,
-    "D": 6,
-    "E": 1,
+    "A": 3,
+    "B": 18,
+    "C": 14,
+    "D": 18,
+    "E": 5,
     "A_text": "Not at all likely",
     "B_text": "Not very likely",
     "C_text": "Neutral",
@@ -38,9 +38,9 @@
   },
   "level": {
     "A": 0,
-    "B": 2,
-    "C": 6,
-    "D": 4,
+    "B": 7,
+    "C": 37,
+    "D": 14,
     "E": 0,
     "A_text": "Not at all well",
     "B_text": "Not very well",
@@ -49,35 +49,35 @@
     "E_text": "Extremely well"
   },
   "set_cover": {
-    "included_pct_unweighted": 0.58,
-    "included_count_unweighted": 157
+    "included_pct_unweighted": 0.57,
+    "included_count_unweighted": 852
   },
   "weighted_set_cover": {
-    "included_pct_weighted": 0.52,
-    "included_count_weighted": 145
+    "included_pct_weighted": 0.55,
+    "included_count_weighted": 825
   },
   "embedding_average": {
-    "included_pct_weighted": 0.63,
-    "included_count_weighted": 176,
+    "included_pct_weighted": 0.65,
+    "included_count_weighted": 983,
     "included_pct_unweighted": 0.63,
-    "included_count_unweighted": 172
+    "included_count_unweighted": 942
   },
   "word_movers_distance": {
-    "included_pct_weighted": 0.66,
-    "included_count_weighted": 184,
-    "included_pct_unweighted": 0.65,
-    "included_count_unweighted": 177
+    "included_pct_weighted": 0.62,
+    "included_count_weighted": 930,
+    "included_pct_unweighted": 0.61,
+    "included_count_unweighted": 913
   },
   "jaccard": {
-    "included_pct_weighted": 0.58,
-    "included_count_weighted": 162,
-    "included_pct_unweighted": 0.55,
-    "included_count_unweighted": 151
+    "included_pct_weighted": 0.56,
+    "included_count_weighted": 839,
+    "included_pct_unweighted": 0.58,
+    "included_count_unweighted": 865
   },
   "edit_distance": {
-    "included_pct_weighted": 0.61,
-    "included_count_weighted": 170,
-    "included_pct_unweighted": 0.59,
-    "included_count_unweighted": 162
+    "included_pct_weighted": 0.63,
+    "included_count_weighted": 947,
+    "included_pct_unweighted": 0.61,
+    "included_count_unweighted": 904
   }
 }
