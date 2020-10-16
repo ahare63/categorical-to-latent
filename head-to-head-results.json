@@ -1,10 +1,10 @@
 {
-  "num_responses": 43,
+  "num_responses": 49,
   "major": {
     "A": 1,
     "B": 1,
     "C": 0,
-    "D": 40,
+    "D": 46,
     "E": 1,
     "A_text": "Not a student/Undecided",
     "B_text": "Humanities",
@@ -13,8 +13,8 @@
     "E_text": "Other"
   },
   "frequency": {
-    "A": 17,
-    "B": 20,
+    "A": 19,
+    "B": 24,
     "C": 5,
     "D": 1,
     "A_text": "Never",
@@ -24,9 +24,9 @@
   },
   "adoption": {
     "A": 0,
-    "B": 10,
-    "C": 14,
-    "D": 16,
+    "B": 13,
+    "C": 15,
+    "D": 18,
     "E": 3,
     "A_text": "Not at all likely",
     "B_text": "Not very likely",
@@ -36,9 +36,9 @@
   },
   "level": {
     "A": 1,
-    "B": 3,
-    "C": 28,
-    "D": 9,
+    "B": 5,
+    "C": 31,
+    "D": 10,
     "E": 2,
     "A_text": "Not at all well",
     "B_text": "Not very well",
@@ -49,160 +49,160 @@
   "set_cover": {
     "wins": {
       "preference": {
-        "embedding_average": 72,
-        "word_movers_distance": 78,
+        "embedding_average": 76,
+        "word_movers_distance": 81,
         "jaccard": 85,
-        "edit_distance": 82,
-        "win_percentage": 0.45
+        "edit_distance": 91,
+        "win_percentage": 0.44
       },
       "variety": {
-        "embedding_average": 52,
-        "word_movers_distance": 61,
-        "jaccard": 73,
-        "edit_distance": 55,
+        "embedding_average": 72,
+        "word_movers_distance": 87,
+        "jaccard": 92,
+        "edit_distance": 76,
         "win_percentage": 0.47
       }
     },
     "losses": {
       "preference": {
-        "embedding_average": 108,
-        "word_movers_distance": 95,
-        "jaccard": 102,
-        "edit_distance": 86
+        "embedding_average": 117,
+        "word_movers_distance": 105,
+        "jaccard": 112,
+        "edit_distance": 90
       },
       "variety": {
-        "embedding_average": 88,
-        "word_movers_distance": 77,
-        "jaccard": 55,
-        "edit_distance": 57
+        "embedding_average": 107,
+        "word_movers_distance": 103,
+        "jaccard": 75,
+        "edit_distance": 83
       }
     }
   },
   "weighted_set_cover": {
     "wins": {
       "preference": {
-        "embedding_average": 59,
-        "word_movers_distance": 64,
-        "jaccard": 73,
-        "edit_distance": 67,
-        "win_percentage": 0.38
+        "embedding_average": 63,
+        "word_movers_distance": 65,
+        "jaccard": 80,
+        "edit_distance": 69,
+        "win_percentage": 0.37
       },
       "variety": {
-        "embedding_average": 38,
-        "word_movers_distance": 63,
-        "jaccard": 68,
-        "edit_distance": 60,
+        "embedding_average": 58,
+        "word_movers_distance": 78,
+        "jaccard": 91,
+        "edit_distance": 76,
         "win_percentage": 0.43
       }
     },
     "losses": {
       "preference": {
-        "embedding_average": 124,
-        "word_movers_distance": 97,
-        "jaccard": 91,
-        "edit_distance": 118
+        "embedding_average": 133,
+        "word_movers_distance": 108,
+        "jaccard": 100,
+        "edit_distance": 126
       },
       "variety": {
-        "embedding_average": 88,
-        "word_movers_distance": 74,
-        "jaccard": 63,
-        "edit_distance": 80
+        "embedding_average": 109,
+        "word_movers_distance": 105,
+        "jaccard": 86,
+        "edit_distance": 106
       }
     }
   },
   "embedding_average": {
     "wins": {
       "preference": {
-        "set_cover": 108,
-        "weighted_set_cover": 124,
+        "set_cover": 117,
+        "weighted_set_cover": 133,
         "win_percentage": 0.64
       },
       "variety": {
-        "set_cover": 88,
-        "weighted_set_cover": 88,
-        "win_percentage": 0.66
+        "set_cover": 107,
+        "weighted_set_cover": 109,
+        "win_percentage": 0.62
       }
     },
     "losses": {
       "preference": {
-        "set_cover": 72,
-        "weighted_set_cover": 59
+        "set_cover": 76,
+        "weighted_set_cover": 63
       },
       "variety": {
-        "set_cover": 52,
-        "weighted_set_cover": 38
+        "set_cover": 72,
+        "weighted_set_cover": 58
       }
     }
   },
   "word_movers_distance": {
     "wins": {
       "preference": {
-        "set_cover": 95,
-        "weighted_set_cover": 97,
-        "win_percentage": 0.57
+        "set_cover": 105,
+        "weighted_set_cover": 108,
+        "win_percentage": 0.59
       },
       "variety": {
-        "set_cover": 77,
-        "weighted_set_cover": 74,
-        "win_percentage": 0.55
+        "set_cover": 103,
+        "weighted_set_cover": 105,
+        "win_percentage": 0.56
       }
     },
     "losses": {
       "preference": {
-        "set_cover": 78,
-        "weighted_set_cover": 64
+        "set_cover": 81,
+        "weighted_set_cover": 65
       },
       "variety": {
-        "set_cover": 61,
-        "weighted_set_cover": 63
+        "set_cover": 87,
+        "weighted_set_cover": 78
       }
     }
   },
   "jaccard": {
     "wins": {
       "preference": {
-        "set_cover": 102,
-        "weighted_set_cover": 91,
-        "win_percentage": 0.55
+        "set_cover": 112,
+        "weighted_set_cover": 100,
+        "win_percentage": 0.56
       },
       "variety": {
-        "set_cover": 55,
-        "weighted_set_cover": 63,
-        "win_percentage": 0.46
+        "set_cover": 75,
+        "weighted_set_cover": 86,
+        "win_percentage": 0.47
       }
     },
     "losses": {
       "preference": {
         "set_cover": 85,
-        "weighted_set_cover": 73
+        "weighted_set_cover": 80
       },
       "variety": {
-        "set_cover": 73,
-        "weighted_set_cover": 68
+        "set_cover": 92,
+        "weighted_set_cover": 91
       }
     }
   },
   "edit_distance": {
     "wins": {
       "preference": {
-        "set_cover": 86,
-        "weighted_set_cover": 118,
-        "win_percentage": 0.58
+        "set_cover": 90,
+        "weighted_set_cover": 126,
+        "win_percentage": 0.57
       },
       "variety": {
-        "set_cover": 57,
-        "weighted_set_cover": 80,
-        "win_percentage": 0.54
+        "set_cover": 83,
+        "weighted_set_cover": 106,
+        "win_percentage": 0.55
       }
     },
     "losses": {
       "preference": {
-        "set_cover": 82,
-        "weighted_set_cover": 67
+        "set_cover": 91,
+        "weighted_set_cover": 69
       },
       "variety": {
-        "set_cover": 55,
-        "weighted_set_cover": 60
+        "set_cover": 76,
+        "weighted_set_cover": 76
       }
     }
   }
