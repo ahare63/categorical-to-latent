@@ -1,0 +1,83 @@
+{
+  "num_responses": 58,
+  "num_answered_weighted": 1508,
+  "num_answered_unweighted": 1492,
+  "major": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 58,
+    "E": 0,
+    "A_text": "Not a student/Undecided",
+    "B_text": "Humanities",
+    "C_text": "Social Sciences",
+    "D_text": "Engineering/Hard Sciences",
+    "E_text": "Other"
+  },
+  "frequency": {
+    "A": 14,
+    "B": 32,
+    "C": 10,
+    "D": 2,
+    "A_text": "Never",
+    "B_text": "A few times a year",
+    "C_text": "A few times a month",
+    "D_text": "Several times a week"
+  },
+  "adoption": {
+    "A": 3,
+    "B": 18,
+    "C": 14,
+    "D": 18,
+    "E": 5,
+    "A_text": "Not at all likely",
+    "B_text": "Not very likely",
+    "C_text": "Neutral",
+    "D_text": "Somewhat likely",
+    "E_text": "Very likely"
+  },
+  "level": {
+    "A": 0,
+    "B": 7,
+    "C": 37,
+    "D": 14,
+    "E": 0,
+    "A_text": "Not at all well",
+    "B_text": "Not very well",
+    "C_text": "Somewhat well",
+    "D_text": "Very well",
+    "E_text": "Extremely well"
+  },
+  "set_cover": {
+    "included_pct_unweighted": 0.57,
+    "included_count_unweighted": 852
+  },
+  "weighted_set_cover": {
+    "included_pct_weighted": 0.55,
+    "included_count_weighted": 825
+  },
+  "embedding_average": {
+    "included_pct_weighted": 0.65,
+    "included_count_weighted": 983,
+    "included_pct_unweighted": 0.63,
+    "included_count_unweighted": 942
+  },
+  "word_movers_distance": {
+    "included_pct_weighted": 0.62,
+    "included_count_weighted": 930,
+    "included_pct_unweighted": 0.61,
+    "included_count_unweighted": 913
+  },
+  "jaccard": {
+    "included_pct_weighted": 0.56,
+    "included_count_weighted": 839,
+    "included_pct_unweighted": 0.58,
+    "included_count_unweighted": 865
+  },
+  "edit_distance": {
+    "included_pct_weighted": 0.63,
+    "included_count_weighted": 947,
+    "included_pct_unweighted": 0.61,
+    "included_count_unweighted": 904
+  }
+}

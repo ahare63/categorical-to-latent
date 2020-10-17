@@ -108,7 +108,31 @@ def avg_jaccard(stopwords=True):
                     sims[model].append(jaccard_similarity(left, right))
     print({k: np.mean(v) for k, v in sims.items()})
 
+def unique_sentences():
+    with open('./database.json', 'r') as f:
+        db = json.load(f)
+    models = ["set_cover", "embedding_average", "word_movers_distance", "jaccard", "edit_distance"]
+    unique = {}
+    for m in models:
+        unique[m] = 0
+    for resp in db.keys():
+        for model in models:
+            sens = list(db[resp][model].values())
+            other_sens = set()
+            o = [list(db[resp][m].values()) for m in models if m != model]
+            for l in o:
+                for s in l:
+                    other_sens.add(s)
+            for i, s in enumerate(sens):
+                unique_for_alg = s not in sens[:i] and s not in sens[i+1:]
+                unique_for_query = s not in other_sens
+                if unique_for_alg and unique_for_query:
+                    unique[model] += 1
+    for m in models:
+        unique[m] =  unique[m]/(5*len(db.keys()))
+    print(unique)
 
 if __name__ == "__main__":
     # avg_jaccard()
-    get_response_results()
+    # get_response_results()
+    unique_sentences()
