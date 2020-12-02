@@ -5,3 +5,5 @@ survey_app/responses.json
 survey_app/old_responses
 survey_app/results.json
 survey_app/.venv/
+survey_app/choose-3/old_responses/responses
+survey_app/choose-3/responses
