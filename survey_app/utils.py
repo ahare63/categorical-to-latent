@@ -1,8 +1,5 @@
 import glob
 import json
-# from nltk.tokenize import word_tokenize
-# from nltk.corpus import stopwords as nltk_stopwords
-# import numpy as np
 
 # Go through all responses and condense results into single output
 def get_response_results(include_never=True):
@@ -132,7 +129,24 @@ def unique_sentences():
         unique[m] =  unique[m]/(5*len(db.keys()))
     print(unique)
 
+def avg_questions_answered():
+    # Iterate through each response
+    files = glob.glob("./responses/*.json")
+    h2h = []
+    c3 = []
+    for f in files:
+        with open(f, 'r') as resp_file:
+            resp = json.load(resp_file)
+        if resp["survey_type"] == "head-to-head":
+            h2h.append(len(resp["query_responses"]))
+        elif resp["survey_type"] == "choose-3":
+            c3.append(len(resp["query_responses"]))
+    print("h2h", np.mean(h2h))
+    print("c3", np.mean(c3))
+
+
 if __name__ == "__main__":
     # avg_jaccard()
     # get_response_results()
-    unique_sentences()
+    # unique_sentences()
+    avg_questions_answered()
